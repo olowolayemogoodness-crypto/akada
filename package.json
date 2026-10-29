@@ -1,0 +1,100 @@
+{
+  "name": "edulink-prep",
+  "productName": "Edulink Prep",
+  "version": "0.1.0",
+  "description": "Free, open-source, offline JAMB CBT practice: mock exams, personal diagnostics that find weak topics, a note bank, interactive 3D explainers and an offline AI tutor.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist:mac": "electron-builder --mac dmg",
+    "dist:win": "electron-builder --win nsis portable --x64 --ia32",
+    "dist:linux": "electron-builder --linux AppImage",
+    "dist": "electron-builder --publish never"
+  },
+  "dependencies": {
+    "gsap": "3.12.5",
+    "three": "0.169.0"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.edulink.prep",
+    "productName": "Edulink Prep",
+    "files": [
+      "main.js",
+      "preload.js",
+      "app/**/*",
+      "node_modules/three/build/three.module.js",
+      "node_modules/three/examples/jsm/**/*",
+      "node_modules/gsap/**/*",
+      "LICENSE",
+      "CONTENT-LICENSE.md"
+    ],
+    "mac": {
+      "category": "public.app-category.education",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "universal"
+          ]
+        }
+      ]
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false,
+      "artifactName": "Edulink-Prep-Setup-${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "Edulink-Prep-Portable-${version}.${ext}"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Education"
+    }
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Goodness Olowolayemo and contributors",
+    "url": "https://joinedulink.com"
+  },
+  "homepage": "https://github.com/olowolayemogoodness-crypto/edulink-prep",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olowolayemogoodness-crypto/edulink-prep.git"
+  },
+  "keywords": [
+    "jamb",
+    "cbt",
+    "education",
+    "nigeria",
+    "offline",
+    "open-source",
+    "exam-prep",
+    "electron"
+  ]
+}

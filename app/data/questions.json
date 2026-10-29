@@ -1,0 +1,3295 @@
+{
+ "version": 1,
+ "subjects": [
+  {
+   "id": "english",
+   "name": "English",
+   "topics": [
+    {
+     "id": "lexis",
+     "name": "Lexis and structure"
+    },
+    {
+     "id": "concord",
+     "name": "Concord"
+    },
+    {
+     "id": "oral",
+     "name": "Oral English"
+    },
+    {
+     "id": "idioms",
+     "name": "Idioms and figures of speech"
+    }
+   ]
+  },
+  {
+   "id": "physics",
+   "name": "Physics",
+   "topics": [
+    {
+     "id": "waves",
+     "name": "Sound and light waves"
+    },
+    {
+     "id": "induction",
+     "name": "Electromagnetic induction"
+    },
+    {
+     "id": "projectiles",
+     "name": "Projectiles"
+    },
+    {
+     "id": "density",
+     "name": "Density and upthrust"
+    }
+   ]
+  },
+  {
+   "id": "chemistry",
+   "name": "Chemistry",
+   "topics": [
+    {
+     "id": "organic",
+     "name": "Organic chemistry"
+    },
+    {
+     "id": "electrochem",
+     "name": "Electrochemistry"
+    },
+    {
+     "id": "equilibrium",
+     "name": "Chemical equilibrium"
+    },
+    {
+     "id": "mole",
+     "name": "Mole concept"
+    }
+   ]
+  },
+  {
+   "id": "mathematics",
+   "name": "Mathematics",
+   "topics": [
+    {
+     "id": "indices",
+     "name": "Indices and logarithms"
+    },
+    {
+     "id": "quadratics",
+     "name": "Quadratic equations"
+    },
+    {
+     "id": "differentiation",
+     "name": "Differentiation"
+    },
+    {
+     "id": "probability",
+     "name": "Probability"
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "phy-01",
+   "subject": "physics",
+   "topic": "waves",
+   "difficulty": 1,
+   "question": "A sound wave of frequency 170 Hz travels at 340 m/s in air. What is its wavelength?",
+   "options": [
+    "0.5 m",
+    "2.0 m",
+    "5.0 m",
+    "57 800 m"
+   ],
+   "answer": 1,
+   "explanation": "λ = v ÷ f = 340 ÷ 170 = 2.0 m.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-02",
+   "subject": "physics",
+   "topic": "waves",
+   "difficulty": 1,
+   "question": "Which of these cannot travel through a vacuum?",
+   "options": [
+    "Light",
+    "Radio waves",
+    "X-rays",
+    "Sound"
+   ],
+   "answer": 3,
+   "explanation": "Sound is a mechanical wave and needs a medium (air, water, solid). The others are electromagnetic waves.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-03",
+   "subject": "physics",
+   "topic": "waves",
+   "difficulty": 1,
+   "question": "The pitch of a musical note depends mainly on its",
+   "options": [
+    "amplitude",
+    "frequency",
+    "quality",
+    "loudness"
+   ],
+   "answer": 1,
+   "explanation": "Higher frequency means higher pitch. Amplitude controls loudness.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-04",
+   "subject": "physics",
+   "topic": "waves",
+   "difficulty": 2,
+   "question": "A boy stands 170 m from a high wall and claps once. If sound travels at 340 m/s, after how long does he hear the echo?",
+   "options": [
+    "1.0 s",
+    "0.5 s",
+    "2.0 s",
+    "4.0 s"
+   ],
+   "answer": 0,
+   "explanation": "The sound goes to the wall and back: distance = 2 × 170 = 340 m. Time = 340 ÷ 340 = 1.0 s.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-05",
+   "subject": "physics",
+   "topic": "waves",
+   "difficulty": 1,
+   "question": "The loudness of a sound depends on its",
+   "options": [
+    "frequency",
+    "wavelength",
+    "amplitude",
+    "speed"
+   ],
+   "answer": 2,
+   "explanation": "Bigger amplitude means more energy, so a louder sound.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-06",
+   "subject": "physics",
+   "topic": "waves",
+   "difficulty": 2,
+   "question": "Light travels at 3.0 × 10⁸ m/s in air. What is its speed in glass of refractive index 1.5?",
+   "options": [
+    "1.5 × 10⁸ m/s",
+    "2.0 × 10⁸ m/s",
+    "3.0 × 10⁸ m/s",
+    "4.5 × 10⁸ m/s"
+   ],
+   "answer": 1,
+   "explanation": "n = c ÷ v, so v = c ÷ n = 3.0 × 10⁸ ÷ 1.5 = 2.0 × 10⁸ m/s.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-07",
+   "subject": "physics",
+   "topic": "waves",
+   "difficulty": 2,
+   "question": "What is the critical angle for glass of refractive index 1.5?",
+   "options": [
+    "42°",
+    "30°",
+    "48°",
+    "60°"
+   ],
+   "answer": 0,
+   "explanation": "sin c = 1 ÷ n = 1 ÷ 1.5 = 0.667, so c ≈ 42°.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-08",
+   "subject": "physics",
+   "topic": "waves",
+   "difficulty": 1,
+   "question": "Sound waves travelling through air are",
+   "options": [
+    "transverse waves",
+    "electromagnetic waves",
+    "longitudinal waves",
+    "stationary waves"
+   ],
+   "answer": 2,
+   "explanation": "Air particles vibrate back and forth along the direction the sound travels: longitudinal.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-09",
+   "subject": "physics",
+   "topic": "waves",
+   "difficulty": 2,
+   "question": "Which of these properties is NOT shown by sound waves?",
+   "options": [
+    "Reflection",
+    "Refraction",
+    "Polarisation",
+    "Diffraction"
+   ],
+   "answer": 2,
+   "explanation": "Only transverse waves can be polarised. Sound is longitudinal.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-10",
+   "subject": "physics",
+   "topic": "waves",
+   "difficulty": 1,
+   "question": "The image formed by a plane mirror is",
+   "options": [
+    "virtual and laterally inverted",
+    "real and inverted",
+    "magnified and erect",
+    "real and diminished"
+   ],
+   "answer": 0,
+   "explanation": "A plane mirror gives a virtual, upright, same-size image with left and right swapped.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-11",
+   "subject": "physics",
+   "topic": "waves",
+   "difficulty": 3,
+   "question": "An object is placed 15 cm in front of a concave mirror of focal length 10 cm. How far from the mirror is the image?",
+   "options": [
+    "6 cm",
+    "12 cm",
+    "60 cm",
+    "30 cm"
+   ],
+   "answer": 3,
+   "explanation": "1/v = 1/f − 1/u = 1/10 − 1/15 = 1/30, so v = 30 cm (real image).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-12",
+   "subject": "physics",
+   "topic": "waves",
+   "difficulty": 3,
+   "question": "A pipe closed at one end is 0.25 m long. If sound travels at 340 m/s, what is its fundamental frequency?",
+   "options": [
+    "170 Hz",
+    "680 Hz",
+    "1 360 Hz",
+    "340 Hz"
+   ],
+   "answer": 3,
+   "explanation": "For a closed pipe, L = λ/4, so λ = 1.0 m and f = v ÷ λ = 340 Hz.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-13",
+   "subject": "physics",
+   "topic": "waves",
+   "difficulty": 2,
+   "question": "White light splits into colours in a prism because",
+   "options": [
+    "light reflects inside the prism",
+    "different colours travel at different speeds in glass",
+    "light diffracts at the edges",
+    "the colours interfere"
+   ],
+   "answer": 1,
+   "explanation": "Each colour bends by a different amount because each has a different speed (refractive index) in glass. This is dispersion.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-14",
+   "subject": "physics",
+   "topic": "induction",
+   "difficulty": 1,
+   "question": "Lenz's law is a consequence of the law of conservation of",
+   "options": [
+    "charge",
+    "momentum",
+    "energy",
+    "mass"
+   ],
+   "answer": 2,
+   "explanation": "The induced current opposes the change causing it, so you must do work to produce electrical energy. Energy is conserved.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-15",
+   "subject": "physics",
+   "topic": "induction",
+   "difficulty": 1,
+   "question": "Faraday's law states that the induced e.m.f. is proportional to the",
+   "options": [
+    "strength of the magnet only",
+    "rate of change of magnetic flux linkage",
+    "resistance of the coil",
+    "number of magnets used"
+   ],
+   "answer": 1,
+   "explanation": "E = N × (change in flux ÷ time). The faster the flux linkage changes, the bigger the e.m.f.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-16",
+   "subject": "physics",
+   "topic": "induction",
+   "difficulty": 1,
+   "question": "A transformer works on the principle of",
+   "options": [
+    "self-induction",
+    "electrostatic induction",
+    "mutual induction",
+    "thermionic emission"
+   ],
+   "answer": 2,
+   "explanation": "A changing current in the primary coil induces an e.m.f. in the secondary coil: mutual induction.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-17",
+   "subject": "physics",
+   "topic": "induction",
+   "difficulty": 2,
+   "question": "A transformer has 200 turns in the primary and 800 turns in the secondary. If 240 V a.c. is applied to the primary, what is the output voltage?",
+   "options": [
+    "960 V",
+    "60 V",
+    "240 V",
+    "480 V"
+   ],
+   "answer": 0,
+   "explanation": "Vs ÷ Vp = Ns ÷ Np, so Vs = 240 × 800 ÷ 200 = 960 V (a step-up transformer).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-18",
+   "subject": "physics",
+   "topic": "induction",
+   "difficulty": 2,
+   "question": "A transformer steps 240 V down to 12 V. If the primary has 2 000 turns, how many turns has the secondary?",
+   "options": [
+    "50",
+    "200",
+    "100",
+    "400"
+   ],
+   "answer": 2,
+   "explanation": "Ns = Np × Vs ÷ Vp = 2 000 × 12 ÷ 240 = 100 turns.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-19",
+   "subject": "physics",
+   "topic": "induction",
+   "difficulty": 3,
+   "question": "An ideal transformer takes 0.5 A at 240 V and gives out 12 V. What current flows in the secondary?",
+   "options": [
+    "0.025 A",
+    "2.5 A",
+    "20 A",
+    "10 A"
+   ],
+   "answer": 3,
+   "explanation": "Power in = power out: 240 × 0.5 = 12 × Is, so Is = 120 ÷ 12 = 10 A.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-20",
+   "subject": "physics",
+   "topic": "induction",
+   "difficulty": 1,
+   "question": "The core of a transformer is laminated to reduce",
+   "options": [
+    "eddy current losses",
+    "copper losses",
+    "hysteresis in the wires",
+    "flux leakage"
+   ],
+   "answer": 0,
+   "explanation": "Thin insulated sheets break up the loops of induced (eddy) currents in the iron core, so less energy is lost as heat.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-21",
+   "subject": "physics",
+   "topic": "induction",
+   "difficulty": 2,
+   "question": "Fleming's right-hand rule gives the direction of the",
+   "options": [
+    "induced current in a moving conductor",
+    "force on a current-carrying wire",
+    "magnetic field around a wire",
+    "flow of electrons in a cell"
+   ],
+   "answer": 0,
+   "explanation": "Right hand: generators (induced current). Left hand: motors (force).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-22",
+   "subject": "physics",
+   "topic": "induction",
+   "difficulty": 2,
+   "question": "A straight wire 0.5 m long moves at 4 m/s at right angles to a magnetic field of 0.2 T. What e.m.f. is induced across it?",
+   "options": [
+    "0.4 V",
+    "0.1 V",
+    "1.6 V",
+    "10 V"
+   ],
+   "answer": 0,
+   "explanation": "E = BLv = 0.2 × 0.5 × 4 = 0.4 V.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-23",
+   "subject": "physics",
+   "topic": "induction",
+   "difficulty": 1,
+   "question": "An a.c. generator converts",
+   "options": [
+    "electrical energy to mechanical energy",
+    "chemical energy to electrical energy",
+    "mechanical energy to electrical energy",
+    "heat energy to electrical energy"
+   ],
+   "answer": 2,
+   "explanation": "Turning the coil (mechanical work) in a magnetic field produces electricity.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-24",
+   "subject": "physics",
+   "topic": "induction",
+   "difficulty": 3,
+   "question": "The magnetic flux through a 100-turn coil falls from 0.05 Wb to zero in 0.1 s. What is the average e.m.f. induced?",
+   "options": [
+    "0.5 V",
+    "50 V",
+    "5 V",
+    "500 V"
+   ],
+   "answer": 1,
+   "explanation": "E = N × ΔΦ ÷ Δt = 100 × 0.05 ÷ 0.1 = 50 V.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-25",
+   "subject": "physics",
+   "topic": "induction",
+   "difficulty": 2,
+   "question": "Self-induction in a coil opposes",
+   "options": [
+    "a steady current through it",
+    "the resistance of the coil",
+    "any change in the current through it",
+    "the voltage of the supply"
+   ],
+   "answer": 2,
+   "explanation": "A coil produces a back e.m.f. whenever its own current changes, opposing that change.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-26",
+   "subject": "physics",
+   "topic": "induction",
+   "difficulty": 1,
+   "question": "Which of these will increase the e.m.f. induced when a magnet is pushed into a coil?",
+   "options": [
+    "Using fewer turns",
+    "Moving the magnet faster",
+    "Using a weaker magnet",
+    "Holding the magnet still inside the coil"
+   ],
+   "answer": 1,
+   "explanation": "A faster movement changes the flux more quickly, so the e.m.f. is larger. A still magnet induces nothing.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-27",
+   "subject": "physics",
+   "topic": "projectiles",
+   "difficulty": 2,
+   "question": "A ball is thrown horizontally at 20 m/s from the top of a cliff 45 m high. How far from the foot of the cliff does it land? (g = 10 m/s²)",
+   "options": [
+    "30 m",
+    "60 m",
+    "45 m",
+    "90 m"
+   ],
+   "answer": 1,
+   "explanation": "Vertical: 45 = ½ × 10 × t², so t = 3 s. Horizontal distance = 20 × 3 = 60 m.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-28",
+   "subject": "physics",
+   "topic": "projectiles",
+   "difficulty": 1,
+   "question": "At what angle of projection is the horizontal range of a projectile greatest?",
+   "options": [
+    "30°",
+    "60°",
+    "90°",
+    "45°"
+   ],
+   "answer": 3,
+   "explanation": "R = u² sin 2θ ÷ g is largest when sin 2θ = 1, that is θ = 45°.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-29",
+   "subject": "physics",
+   "topic": "projectiles",
+   "difficulty": 1,
+   "question": "At the highest point of its path, a projectile has",
+   "options": [
+    "zero speed",
+    "zero horizontal velocity",
+    "zero acceleration",
+    "zero vertical velocity"
+   ],
+   "answer": 3,
+   "explanation": "It stops rising for an instant, so vertical velocity is zero. It still moves sideways and gravity still acts.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-30",
+   "subject": "physics",
+   "topic": "projectiles",
+   "difficulty": 2,
+   "question": "A stone is projected at 20 m/s at 30° to the horizontal. What is its time of flight? (g = 10 m/s²)",
+   "options": [
+    "1 s",
+    "2 s",
+    "3 s",
+    "4 s"
+   ],
+   "answer": 1,
+   "explanation": "T = 2u sin θ ÷ g = 2 × 20 × 0.5 ÷ 10 = 2 s.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-31",
+   "subject": "physics",
+   "topic": "projectiles",
+   "difficulty": 2,
+   "question": "A ball is projected at 20 m/s at 30° to the horizontal. What maximum height does it reach? (g = 10 m/s²)",
+   "options": [
+    "10 m",
+    "5 m",
+    "15 m",
+    "20 m"
+   ],
+   "answer": 1,
+   "explanation": "H = (u sin θ)² ÷ 2g = (20 × 0.5)² ÷ 20 = 100 ÷ 20 = 5 m.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-32",
+   "subject": "physics",
+   "topic": "projectiles",
+   "difficulty": 2,
+   "question": "A projectile is launched at 20 m/s at 45°. What is its horizontal range? (g = 10 m/s²)",
+   "options": [
+    "20 m",
+    "40 m",
+    "60 m",
+    "80 m"
+   ],
+   "answer": 1,
+   "explanation": "R = u² sin 2θ ÷ g = 400 × 1 ÷ 10 = 40 m.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-33",
+   "subject": "physics",
+   "topic": "projectiles",
+   "difficulty": 2,
+   "question": "Two balls are projected with the same speed at 30° and 60° to the horizontal. Their horizontal ranges are",
+   "options": [
+    "in the ratio 1 : 2",
+    "equal",
+    "in the ratio 2 : 1",
+    "in the ratio 1 : 3"
+   ],
+   "answer": 1,
+   "explanation": "sin 60° = sin 120°, so complementary angles (adding to 90°) give the same range.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-34",
+   "subject": "physics",
+   "topic": "projectiles",
+   "difficulty": 1,
+   "question": "Ignoring air resistance, the horizontal component of a projectile's velocity",
+   "options": [
+    "stays constant",
+    "increases steadily",
+    "decreases steadily",
+    "becomes zero at the top"
+   ],
+   "answer": 0,
+   "explanation": "No horizontal force acts, so the horizontal velocity never changes.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-35",
+   "subject": "physics",
+   "topic": "projectiles",
+   "difficulty": 2,
+   "question": "A stone is thrown horizontally from the top of an 80 m cliff. How long does it take to reach the ground? (g = 10 m/s²)",
+   "options": [
+    "2 s",
+    "8 s",
+    "16 s",
+    "4 s"
+   ],
+   "answer": 3,
+   "explanation": "h = ½gt², so t = √(2h ÷ g) = √(160 ÷ 10) = 4 s. The horizontal speed does not matter.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-36",
+   "subject": "physics",
+   "topic": "projectiles",
+   "difficulty": 1,
+   "question": "What is the acceleration of a projectile at the highest point of its path? (g = 10 m/s²)",
+   "options": [
+    "10 m/s² downwards",
+    "Zero",
+    "10 m/s² upwards",
+    "It depends on the angle"
+   ],
+   "answer": 0,
+   "explanation": "Gravity acts the whole time, so acceleration is always g downwards, even at the top.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-37",
+   "subject": "physics",
+   "topic": "projectiles",
+   "difficulty": 1,
+   "question": "A ball is thrown straight up at 30 m/s. How long does it take to reach its highest point? (g = 10 m/s²)",
+   "options": [
+    "1.5 s",
+    "6 s",
+    "9 s",
+    "3 s"
+   ],
+   "answer": 3,
+   "explanation": "v = u − gt; at the top v = 0, so t = 30 ÷ 10 = 3 s.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-38",
+   "subject": "physics",
+   "topic": "projectiles",
+   "difficulty": 3,
+   "question": "A projectile is fired at 50 m/s at an angle θ where sin θ = 0.6 and cos θ = 0.8. What is its horizontal velocity?",
+   "options": [
+    "40 m/s",
+    "30 m/s",
+    "50 m/s",
+    "60 m/s"
+   ],
+   "answer": 0,
+   "explanation": "Horizontal component = u cos θ = 50 × 0.8 = 40 m/s.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-39",
+   "subject": "physics",
+   "topic": "density",
+   "difficulty": 1,
+   "question": "A stone of mass 60 g has a volume of 20 cm³. What is its density?",
+   "options": [
+    "3 000 kg/m³",
+    "300 kg/m³",
+    "1 200 kg/m³",
+    "30 000 kg/m³"
+   ],
+   "answer": 0,
+   "explanation": "ρ = m ÷ V = 60 ÷ 20 = 3 g/cm³ = 3 000 kg/m³ (multiply g/cm³ by 1 000).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-40",
+   "subject": "physics",
+   "topic": "density",
+   "difficulty": 2,
+   "question": "A solid weighs 30 g in air and 20 g when fully immersed in water. What is its relative density?",
+   "options": [
+    "1.5",
+    "2",
+    "3",
+    "6"
+   ],
+   "answer": 2,
+   "explanation": "RD = weight in air ÷ loss of weight in water = 30 ÷ (30 − 20) = 3.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-41",
+   "subject": "physics",
+   "topic": "density",
+   "difficulty": 1,
+   "question": "Archimedes' principle states that the upthrust on a body immersed in a fluid equals the",
+   "options": [
+    "weight of the body",
+    "volume of the body",
+    "density of the fluid",
+    "weight of fluid displaced"
+   ],
+   "answer": 3,
+   "explanation": "Upthrust = weight of the fluid pushed aside (displaced).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-42",
+   "subject": "physics",
+   "topic": "density",
+   "difficulty": 1,
+   "question": "A solid object will float in a liquid if its density is",
+   "options": [
+    "greater than the liquid's",
+    "equal to its mass",
+    "greater than 1 000 kg/m³",
+    "less than the liquid's"
+   ],
+   "answer": 3,
+   "explanation": "Less dense objects float; denser objects sink.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-43",
+   "subject": "physics",
+   "topic": "density",
+   "difficulty": 2,
+   "question": "A block of volume 0.002 m³ is fully immersed in water of density 1 000 kg/m³. What is the upthrust on it? (g = 10 m/s²)",
+   "options": [
+    "2 N",
+    "200 N",
+    "20 N",
+    "2 000 N"
+   ],
+   "answer": 2,
+   "explanation": "Upthrust = ρVg = 1 000 × 0.002 × 10 = 20 N.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-44",
+   "subject": "physics",
+   "topic": "density",
+   "difficulty": 1,
+   "question": "The law of flotation states that a floating body displaces",
+   "options": [
+    "its own volume of fluid",
+    "half its weight of fluid",
+    "its own weight of fluid",
+    "fluid equal to its density"
+   ],
+   "answer": 2,
+   "explanation": "A floating body sinks until the fluid it displaces weighs the same as the body.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-45",
+   "subject": "physics",
+   "topic": "density",
+   "difficulty": 1,
+   "question": "A hydrometer is used to measure the",
+   "options": [
+    "pressure of a liquid",
+    "temperature of a liquid",
+    "relative density of a liquid",
+    "volume of a liquid"
+   ],
+   "answer": 2,
+   "explanation": "A hydrometer floats higher in denser liquids, so its scale reads relative density.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-46",
+   "subject": "physics",
+   "topic": "density",
+   "difficulty": 1,
+   "question": "Aluminium has a density of 2.7 g/cm³. What is the mass of 10 cm³ of aluminium?",
+   "options": [
+    "0.27 g",
+    "27 g",
+    "2.7 g",
+    "270 g"
+   ],
+   "answer": 1,
+   "explanation": "m = ρ × V = 2.7 × 10 = 27 g.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-47",
+   "subject": "physics",
+   "topic": "density",
+   "difficulty": 1,
+   "question": "The SI unit of density is",
+   "options": [
+    "g cm⁻³",
+    "N m⁻²",
+    "kg m⁻²",
+    "kg m⁻³"
+   ],
+   "answer": 3,
+   "explanation": "Density = mass (kg) ÷ volume (m³), so kg m⁻³.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-48",
+   "subject": "physics",
+   "topic": "density",
+   "difficulty": 1,
+   "question": "A body weighs 10 N in air and 6 N when fully immersed in water. What is the upthrust on it?",
+   "options": [
+    "4 N",
+    "6 N",
+    "10 N",
+    "16 N"
+   ],
+   "answer": 0,
+   "explanation": "Upthrust = loss in weight = 10 − 6 = 4 N.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-49",
+   "subject": "physics",
+   "topic": "density",
+   "difficulty": 1,
+   "question": "Ice floats on water because",
+   "options": [
+    "ice is less dense than water",
+    "ice is lighter than water",
+    "ice contains air bubbles only",
+    "water pushes all solids up"
+   ],
+   "answer": 0,
+   "explanation": "Water expands when it freezes, so ice has a lower density than liquid water.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "phy-50",
+   "subject": "physics",
+   "topic": "density",
+   "difficulty": 3,
+   "question": "A block of wood of density 600 kg/m³ floats in water of density 1 000 kg/m³. What fraction of its volume is under water?",
+   "options": [
+    "0.4",
+    "1.0",
+    "1.67",
+    "0.6"
+   ],
+   "answer": 3,
+   "explanation": "Fraction submerged = ρ(wood) ÷ ρ(water) = 600 ÷ 1 000 = 0.6.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-01",
+   "subject": "chemistry",
+   "topic": "organic",
+   "difficulty": 1,
+   "question": "The general formula of the alkanes is",
+   "options": [
+    "CₙH₂ₙ₊₂",
+    "CₙH₂ₙ",
+    "CₙH₂ₙ₋₂",
+    "CₙH₂ₙ₊₁OH"
+   ],
+   "answer": 0,
+   "explanation": "Alkanes are saturated: CₙH₂ₙ₊₂ (CH₄, C₂H₆, C₃H₈ …).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-02",
+   "subject": "chemistry",
+   "topic": "organic",
+   "difficulty": 1,
+   "question": "The functional group of the alkanols is",
+   "options": [
+    "–COOH",
+    "–CHO",
+    "–OH",
+    "–COO–"
+   ],
+   "answer": 2,
+   "explanation": "Alkanols (alcohols) contain the hydroxyl group, –OH.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-03",
+   "subject": "chemistry",
+   "topic": "organic",
+   "difficulty": 1,
+   "question": "Ethene decolourises bromine water because it is",
+   "options": [
+    "saturated",
+    "an acid",
+    "unsaturated",
+    "a polymer"
+   ],
+   "answer": 2,
+   "explanation": "The C=C double bond adds bromine across it (addition reaction), removing the brown colour.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-04",
+   "subject": "chemistry",
+   "topic": "organic",
+   "difficulty": 2,
+   "question": "What is the IUPAC name of CH₃CH₂CH₂OH?",
+   "options": [
+    "Propanal",
+    "Propan-2-ol",
+    "Propan-1-ol",
+    "Propanoic acid"
+   ],
+   "answer": 2,
+   "explanation": "Three carbons (prop-), –OH on carbon 1: propan-1-ol.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-05",
+   "subject": "chemistry",
+   "topic": "organic",
+   "difficulty": 1,
+   "question": "Isomers are compounds with the same",
+   "options": [
+    "structural formula but different molecular formulae",
+    "physical properties",
+    "molecular formula but different structural formulae",
+    "number of functional groups only"
+   ],
+   "answer": 2,
+   "explanation": "Same atoms, arranged differently.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-06",
+   "subject": "chemistry",
+   "topic": "organic",
+   "difficulty": 1,
+   "question": "The fermentation of glucose by yeast produces",
+   "options": [
+    "ethanol and carbon(IV) oxide",
+    "ethanoic acid and water",
+    "methanol and oxygen",
+    "ethene and water"
+   ],
+   "answer": 0,
+   "explanation": "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (with zymase from yeast).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-07",
+   "subject": "chemistry",
+   "topic": "organic",
+   "difficulty": 2,
+   "question": "Ethanoic acid reacts with ethanol in the presence of concentrated H₂SO₄ to form",
+   "options": [
+    "ethanal",
+    "ethyl ethanoate",
+    "ethene",
+    "sodium ethanoate"
+   ],
+   "answer": 1,
+   "explanation": "Acid + alcohol → ester + water (esterification).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-08",
+   "subject": "chemistry",
+   "topic": "organic",
+   "difficulty": 2,
+   "question": "The cracking of long-chain hydrocarbons produces",
+   "options": [
+    "only longer alkanes",
+    "shorter alkanes and alkenes",
+    "alcohols and acids",
+    "carbon and hydrogen only"
+   ],
+   "answer": 1,
+   "explanation": "Heat (and a catalyst) breaks big molecules into smaller alkanes and alkenes.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-09",
+   "subject": "chemistry",
+   "topic": "organic",
+   "difficulty": 2,
+   "question": "How many structural isomers does butane, C₄H₁₀, have?",
+   "options": [
+    "2",
+    "1",
+    "3",
+    "4"
+   ],
+   "answer": 0,
+   "explanation": "Butane (straight chain) and 2-methylpropane (branched).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-10",
+   "subject": "chemistry",
+   "topic": "organic",
+   "difficulty": 2,
+   "question": "Substitution reactions with chlorine in sunlight are typical of",
+   "options": [
+    "alkanes",
+    "alkenes",
+    "alkynes",
+    "alkanoic acids"
+   ],
+   "answer": 0,
+   "explanation": "Alkanes are saturated, so chlorine replaces hydrogen atoms rather than adding across a double bond.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-11",
+   "subject": "chemistry",
+   "topic": "organic",
+   "difficulty": 2,
+   "question": "Saponification is the",
+   "options": [
+    "addition of hydrogen to oils",
+    "hydrolysis of fats or oils by alkali to form soap",
+    "burning of fats",
+    "fermentation of sugars"
+   ],
+   "answer": 1,
+   "explanation": "Fat + NaOH → soap + glycerol (propane-1,2,3-triol).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-12",
+   "subject": "chemistry",
+   "topic": "organic",
+   "difficulty": 1,
+   "question": "The polymer formed from ethene is",
+   "options": [
+    "nylon",
+    "PVC",
+    "rubber",
+    "polythene"
+   ],
+   "answer": 3,
+   "explanation": "Many ethene units join by addition polymerisation to form poly(ethene).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-13",
+   "subject": "chemistry",
+   "topic": "organic",
+   "difficulty": 3,
+   "question": "The carbon atoms in ethyne (C₂H₂) are",
+   "options": [
+    "sp² hybridised",
+    "sp³ hybridised",
+    "sp hybridised",
+    "not hybridised"
+   ],
+   "answer": 2,
+   "explanation": "A triple bond and a linear shape (180°) mean sp hybridisation.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-14",
+   "subject": "chemistry",
+   "topic": "electrochem",
+   "difficulty": 1,
+   "question": "During electrolysis, oxidation takes place at the",
+   "options": [
+    "anode",
+    "cathode",
+    "salt bridge",
+    "electrolyte surface"
+   ],
+   "answer": 0,
+   "explanation": "Anions lose electrons at the anode (oxidation). Remember: 'An Ox, Red Cat'.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-15",
+   "subject": "chemistry",
+   "topic": "electrochem",
+   "difficulty": 2,
+   "question": "In the electrolysis of dilute H₂SO₄ using platinum electrodes, the gas given off at the cathode is",
+   "options": [
+    "hydrogen",
+    "oxygen",
+    "sulphur(IV) oxide",
+    "chlorine"
+   ],
+   "answer": 0,
+   "explanation": "H⁺ ions gain electrons at the cathode: 2H⁺ + 2e⁻ → H₂.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-16",
+   "subject": "chemistry",
+   "topic": "electrochem",
+   "difficulty": 1,
+   "question": "One faraday is approximately",
+   "options": [
+    "96 500 C",
+    "9 650 C",
+    "965 000 C",
+    "6.02 × 10²³ C"
+   ],
+   "answer": 0,
+   "explanation": "1 F = charge on 1 mole of electrons ≈ 96 500 C.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-17",
+   "subject": "chemistry",
+   "topic": "electrochem",
+   "difficulty": 3,
+   "question": "What mass of copper is deposited when 2 A flows through CuSO₄ solution for 965 s? (Cu = 64, F = 96 500 C)",
+   "options": [
+    "0.32 g",
+    "1.28 g",
+    "6.4 g",
+    "0.64 g"
+   ],
+   "answer": 3,
+   "explanation": "Q = 2 × 965 = 1 930 C = 0.02 mol of electrons. Cu²⁺ needs 2 electrons, so 0.01 mol Cu = 0.64 g.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-18",
+   "subject": "chemistry",
+   "topic": "electrochem",
+   "difficulty": 2,
+   "question": "In the electrolysis of concentrated sodium chloride solution with carbon electrodes, the product at the anode is",
+   "options": [
+    "chlorine",
+    "sodium",
+    "oxygen",
+    "hydrogen"
+   ],
+   "answer": 0,
+   "explanation": "In concentrated solution Cl⁻ is discharged in preference to OH⁻, giving chlorine gas.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-19",
+   "subject": "chemistry",
+   "topic": "electrochem",
+   "difficulty": 2,
+   "question": "In the purification of copper by electrolysis, the impure copper is made the",
+   "options": [
+    "cathode",
+    "electrolyte",
+    "salt bridge",
+    "anode"
+   ],
+   "answer": 3,
+   "explanation": "The impure anode dissolves; pure copper deposits on the cathode.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-20",
+   "subject": "chemistry",
+   "topic": "electrochem",
+   "difficulty": 2,
+   "question": "In a Daniell cell, the zinc electrode is the",
+   "options": [
+    "positive electrode",
+    "negative electrode",
+    "cathode",
+    "salt bridge"
+   ],
+   "answer": 1,
+   "explanation": "Zinc is more reactive, so it gives up electrons (oxidation) and is the negative electrode.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-21",
+   "subject": "chemistry",
+   "topic": "electrochem",
+   "difficulty": 1,
+   "question": "Which reaction will take place?",
+   "options": [
+    "Cu + ZnSO₄ → CuSO₄ + Zn",
+    "Ag + CuSO₄ → Ag₂SO₄ + Cu",
+    "Cu + FeSO₄ → CuSO₄ + Fe",
+    "Zn + CuSO₄ → ZnSO₄ + Cu"
+   ],
+   "answer": 3,
+   "explanation": "A more reactive metal (zinc) displaces a less reactive one (copper) from its salt.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-22",
+   "subject": "chemistry",
+   "topic": "electrochem",
+   "difficulty": 3,
+   "question": "E° for Zn²⁺/Zn is −0.76 V and for Cu²⁺/Cu is +0.34 V. What is the e.m.f. of the Zn–Cu cell?",
+   "options": [
+    "0.42 V",
+    "−1.10 V",
+    "−0.42 V",
+    "1.10 V"
+   ],
+   "answer": 3,
+   "explanation": "E°cell = E°(cathode) − E°(anode) = 0.34 − (−0.76) = 1.10 V.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-23",
+   "subject": "chemistry",
+   "topic": "electrochem",
+   "difficulty": 1,
+   "question": "Galvanising protects iron from rusting by coating it with",
+   "options": [
+    "tin",
+    "zinc",
+    "copper",
+    "chromium"
+   ],
+   "answer": 1,
+   "explanation": "Zinc is more reactive, so it corrodes first and protects the iron (sacrificial protection).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-24",
+   "subject": "chemistry",
+   "topic": "electrochem",
+   "difficulty": 2,
+   "question": "How many faradays are needed to deposit 1 mole of aluminium from Al³⁺ ions?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "6"
+   ],
+   "answer": 2,
+   "explanation": "Al³⁺ + 3e⁻ → Al, so 3 moles of electrons = 3 F.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-25",
+   "subject": "chemistry",
+   "topic": "electrochem",
+   "difficulty": 1,
+   "question": "An electrolyte is a substance that",
+   "options": [
+    "conducts electricity in the solid state only",
+    "never conducts electricity",
+    "conducts electricity when molten or in solution and is decomposed by it",
+    "is a metal"
+   ],
+   "answer": 2,
+   "explanation": "Ions must be free to move, so it conducts when molten or dissolved, and breaks down.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-26",
+   "subject": "chemistry",
+   "topic": "electrochem",
+   "difficulty": 3,
+   "question": "When CuSO₄ solution is electrolysed using copper electrodes, the blue colour of the solution",
+   "options": [
+    "stays the same",
+    "fades away",
+    "turns green",
+    "turns colourless at once"
+   ],
+   "answer": 0,
+   "explanation": "The copper anode dissolves as fast as copper deposits on the cathode, so the Cu²⁺ concentration stays the same.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-27",
+   "subject": "chemistry",
+   "topic": "equilibrium",
+   "difficulty": 1,
+   "question": "Le Chatelier's principle states that when a system at equilibrium is disturbed, the equilibrium",
+   "options": [
+    "stops completely",
+    "always shifts to the right",
+    "always shifts to the left",
+    "shifts to oppose the disturbance"
+   ],
+   "answer": 3,
+   "explanation": "The system adjusts to cancel out the change made to it.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-28",
+   "subject": "chemistry",
+   "topic": "equilibrium",
+   "difficulty": 2,
+   "question": "For N₂(g) + 3H₂(g) ⇌ 2NH₃(g), increasing the pressure will",
+   "options": [
+    "shift the equilibrium to the right",
+    "shift the equilibrium to the left",
+    "have no effect",
+    "stop the reaction"
+   ],
+   "answer": 0,
+   "explanation": "4 moles of gas on the left, 2 on the right. Higher pressure favours fewer gas moles: more NH₃.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-29",
+   "subject": "chemistry",
+   "topic": "equilibrium",
+   "difficulty": 2,
+   "question": "For N₂ + 3H₂ ⇌ 2NH₃ (ΔH negative), raising the temperature will",
+   "options": [
+    "decrease the yield of ammonia",
+    "increase the yield of ammonia",
+    "not affect the yield",
+    "double the yield"
+   ],
+   "answer": 0,
+   "explanation": "The forward reaction is exothermic. Heating favours the backward (endothermic) reaction.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-30",
+   "subject": "chemistry",
+   "topic": "equilibrium",
+   "difficulty": 1,
+   "question": "A catalyst added to a system at equilibrium",
+   "options": [
+    "shifts it to the right",
+    "speeds up forward and backward reactions equally",
+    "shifts it to the left",
+    "increases the yield"
+   ],
+   "answer": 1,
+   "explanation": "A catalyst only helps equilibrium be reached faster; the position does not change.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-31",
+   "subject": "chemistry",
+   "topic": "equilibrium",
+   "difficulty": 2,
+   "question": "For H₂(g) + I₂(g) ⇌ 2HI(g), the equilibrium constant Kc is",
+   "options": [
+    "[HI] ÷ [H₂][I₂]",
+    "[H₂][I₂] ÷ [HI]²",
+    "[HI]² ÷ [H₂][I₂]",
+    "2[HI] ÷ [H₂][I₂]"
+   ],
+   "answer": 2,
+   "explanation": "Products over reactants, each raised to its coefficient: [HI]² ÷ ([H₂][I₂]).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-32",
+   "subject": "chemistry",
+   "topic": "equilibrium",
+   "difficulty": 2,
+   "question": "For H₂(g) + I₂(g) ⇌ 2HI(g), increasing the pressure will",
+   "options": [
+    "shift it to the right",
+    "have no effect on the position",
+    "shift it to the left",
+    "stop the reaction"
+   ],
+   "answer": 1,
+   "explanation": "2 moles of gas on each side, so pressure does not change the position.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-33",
+   "subject": "chemistry",
+   "topic": "equilibrium",
+   "difficulty": 1,
+   "question": "A reversible reaction is in dynamic equilibrium when",
+   "options": [
+    "both reactions have stopped",
+    "all reactants are used up",
+    "the forward and backward rates are equal",
+    "the products are removed"
+   ],
+   "answer": 2,
+   "explanation": "Both reactions continue, but at the same rate, so amounts stay constant.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-34",
+   "subject": "chemistry",
+   "topic": "equilibrium",
+   "difficulty": 2,
+   "question": "The value of the equilibrium constant changes only when the",
+   "options": [
+    "pressure changes",
+    "concentration changes",
+    "temperature changes",
+    "catalyst is added"
+   ],
+   "answer": 2,
+   "explanation": "Only temperature changes K. The others move the position but K stays the same.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-35",
+   "subject": "chemistry",
+   "topic": "equilibrium",
+   "difficulty": 1,
+   "question": "For N₂ + 3H₂ ⇌ 2NH₃, adding more nitrogen will",
+   "options": [
+    "shift the equilibrium to the right",
+    "shift the equilibrium to the left",
+    "have no effect",
+    "reduce the amount of ammonia"
+   ],
+   "answer": 0,
+   "explanation": "Adding a reactant pushes the equilibrium towards the products.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-36",
+   "subject": "chemistry",
+   "topic": "equilibrium",
+   "difficulty": 1,
+   "question": "The catalyst used in the Contact process is",
+   "options": [
+    "finely divided iron",
+    "vanadium(V) oxide",
+    "nickel",
+    "platinum only"
+   ],
+   "answer": 1,
+   "explanation": "V₂O₅ catalyses 2SO₂ + O₂ ⇌ 2SO₃.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-37",
+   "subject": "chemistry",
+   "topic": "equilibrium",
+   "difficulty": 1,
+   "question": "The catalyst used in the Haber process is",
+   "options": [
+    "vanadium(V) oxide",
+    "finely divided iron",
+    "manganese(IV) oxide",
+    "copper"
+   ],
+   "answer": 1,
+   "explanation": "Iron speeds up N₂ + 3H₂ ⇌ 2NH₃.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-38",
+   "subject": "chemistry",
+   "topic": "equilibrium",
+   "difficulty": 3,
+   "question": "For an endothermic reaction at equilibrium, raising the temperature will",
+   "options": [
+    "decrease K",
+    "leave K unchanged",
+    "increase K",
+    "make K zero"
+   ],
+   "answer": 2,
+   "explanation": "Heat favours the endothermic (forward) direction, so more products and a larger K.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-39",
+   "subject": "chemistry",
+   "topic": "mole",
+   "difficulty": 1,
+   "question": "The Avogadro constant is",
+   "options": [
+    "6.02 × 10²² per mole",
+    "9.65 × 10⁴ per mole",
+    "6.02 × 10²³ per mole",
+    "22.4 per mole"
+   ],
+   "answer": 2,
+   "explanation": "One mole of anything contains 6.02 × 10²³ particles.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-40",
+   "subject": "chemistry",
+   "topic": "mole",
+   "difficulty": 1,
+   "question": "How many moles are in 4.4 g of CO₂? (C = 12, O = 16)",
+   "options": [
+    "0.1",
+    "0.01",
+    "1.0",
+    "10"
+   ],
+   "answer": 0,
+   "explanation": "Molar mass = 12 + 32 = 44 g/mol. Moles = 4.4 ÷ 44 = 0.1.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-41",
+   "subject": "chemistry",
+   "topic": "mole",
+   "difficulty": 1,
+   "question": "What volume do 2 moles of a gas occupy at s.t.p.?",
+   "options": [
+    "11.2 dm³",
+    "22.4 dm³",
+    "67.2 dm³",
+    "44.8 dm³"
+   ],
+   "answer": 3,
+   "explanation": "1 mole occupies 22.4 dm³ at s.t.p., so 2 moles = 44.8 dm³.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-42",
+   "subject": "chemistry",
+   "topic": "mole",
+   "difficulty": 1,
+   "question": "What is the mass of 0.5 mol of NaOH? (Na = 23, O = 16, H = 1)",
+   "options": [
+    "10 g",
+    "40 g",
+    "80 g",
+    "20 g"
+   ],
+   "answer": 3,
+   "explanation": "Molar mass = 40 g/mol, so 0.5 × 40 = 20 g.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-43",
+   "subject": "chemistry",
+   "topic": "mole",
+   "difficulty": 1,
+   "question": "The molar mass of H₂SO₄ is (H = 1, S = 32, O = 16)",
+   "options": [
+    "49 g/mol",
+    "96 g/mol",
+    "100 g/mol",
+    "98 g/mol"
+   ],
+   "answer": 3,
+   "explanation": "2 + 32 + 64 = 98 g/mol.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-44",
+   "subject": "chemistry",
+   "topic": "mole",
+   "difficulty": 2,
+   "question": "4 g of NaOH is dissolved in water to make 500 cm³ of solution. What is its concentration? (NaOH = 40)",
+   "options": [
+    "0.1 mol/dm³",
+    "0.4 mol/dm³",
+    "0.8 mol/dm³",
+    "0.2 mol/dm³"
+   ],
+   "answer": 3,
+   "explanation": "4 g = 0.1 mol. 500 cm³ = 0.5 dm³. 0.1 ÷ 0.5 = 0.2 mol/dm³.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-45",
+   "subject": "chemistry",
+   "topic": "mole",
+   "difficulty": 3,
+   "question": "A compound contains 40% carbon, 6.7% hydrogen and 53.3% oxygen by mass. What is its empirical formula? (C = 12, H = 1, O = 16)",
+   "options": [
+    "CHO",
+    "CH₂O",
+    "C₂H₄O",
+    "CH₃O"
+   ],
+   "answer": 1,
+   "explanation": "C: 40 ÷ 12 = 3.33; H: 6.7 ÷ 1 = 6.7; O: 53.3 ÷ 16 = 3.33. Divide by 3.33: 1 : 2 : 1, so CH₂O.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-46",
+   "subject": "chemistry",
+   "topic": "mole",
+   "difficulty": 1,
+   "question": "In 2H₂ + O₂ → 2H₂O, how many moles of water are formed from 4 moles of hydrogen?",
+   "options": [
+    "2",
+    "4",
+    "6",
+    "8"
+   ],
+   "answer": 1,
+   "explanation": "H₂ and H₂O are in a 2 : 2 (1 : 1) ratio, so 4 moles.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-47",
+   "subject": "chemistry",
+   "topic": "mole",
+   "difficulty": 2,
+   "question": "How many molecules are in 0.5 mol of water?",
+   "options": [
+    "6.02 × 10²³",
+    "3.01 × 10²³",
+    "1.20 × 10²⁴",
+    "9.0 × 10²³"
+   ],
+   "answer": 1,
+   "explanation": "0.5 × 6.02 × 10²³ = 3.01 × 10²³.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-48",
+   "subject": "chemistry",
+   "topic": "mole",
+   "difficulty": 2,
+   "question": "What mass of calcium oxide is formed when 50 g of CaCO₃ is heated strongly? (CaCO₃ = 100, CaO = 56)",
+   "options": [
+    "14 g",
+    "56 g",
+    "100 g",
+    "28 g"
+   ],
+   "answer": 3,
+   "explanation": "CaCO₃ → CaO + CO₂. 50 g = 0.5 mol, giving 0.5 mol CaO = 28 g.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-49",
+   "subject": "chemistry",
+   "topic": "mole",
+   "difficulty": 2,
+   "question": "What is the percentage by mass of nitrogen in NH₄NO₃? (N = 14, H = 1, O = 16)",
+   "options": [
+    "17.5%",
+    "35%",
+    "46.7%",
+    "60%"
+   ],
+   "answer": 1,
+   "explanation": "Molar mass = 80; mass of N = 28. 28 ÷ 80 × 100 = 35%.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "che-50",
+   "subject": "chemistry",
+   "topic": "mole",
+   "difficulty": 3,
+   "question": "What volume of oxygen at s.t.p. is needed to burn 1 mole of methane completely?",
+   "options": [
+    "11.2 dm³",
+    "22.4 dm³",
+    "67.2 dm³",
+    "44.8 dm³"
+   ],
+   "answer": 3,
+   "explanation": "CH₄ + 2O₂ → CO₂ + 2H₂O. 2 mol O₂ × 22.4 = 44.8 dm³.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-01",
+   "subject": "mathematics",
+   "topic": "indices",
+   "difficulty": 1,
+   "question": "Evaluate 27^(2/3).",
+   "options": [
+    "6",
+    "9",
+    "18",
+    "81"
+   ],
+   "answer": 1,
+   "explanation": "27^(1/3) = 3, then 3² = 9.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-02",
+   "subject": "mathematics",
+   "topic": "indices",
+   "difficulty": 1,
+   "question": "Evaluate log₁₀ 1000.",
+   "options": [
+    "3",
+    "2",
+    "10",
+    "100"
+   ],
+   "answer": 0,
+   "explanation": "10³ = 1000, so log₁₀ 1000 = 3.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-03",
+   "subject": "mathematics",
+   "topic": "indices",
+   "difficulty": 1,
+   "question": "Solve 2^(x + 1) = 32.",
+   "options": [
+    "3",
+    "5",
+    "16",
+    "4"
+   ],
+   "answer": 3,
+   "explanation": "32 = 2⁵, so x + 1 = 5 and x = 4.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-04",
+   "subject": "mathematics",
+   "topic": "indices",
+   "difficulty": 1,
+   "question": "Simplify log₂ 8 + log₂ 4.",
+   "options": [
+    "3",
+    "6",
+    "5",
+    "12"
+   ],
+   "answer": 2,
+   "explanation": "log₂ 8 = 3 and log₂ 4 = 2; 3 + 2 = 5.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-05",
+   "subject": "mathematics",
+   "topic": "indices",
+   "difficulty": 1,
+   "question": "Simplify (a³)² ÷ a⁴.",
+   "options": [
+    "a",
+    "a⁵",
+    "a¹⁰",
+    "a²"
+   ],
+   "answer": 3,
+   "explanation": "(a³)² = a⁶; a⁶ ÷ a⁴ = a².",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-06",
+   "subject": "mathematics",
+   "topic": "indices",
+   "difficulty": 2,
+   "question": "Given that log 2 = 0.3010, find log 8.",
+   "options": [
+    "0.6020",
+    "1.2040",
+    "0.9030",
+    "2.4080"
+   ],
+   "answer": 2,
+   "explanation": "log 8 = log 2³ = 3 × 0.3010 = 0.9030.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-07",
+   "subject": "mathematics",
+   "topic": "indices",
+   "difficulty": 2,
+   "question": "Evaluate 8^(−2/3).",
+   "options": [
+    "1/4",
+    "−4",
+    "4",
+    "1/16"
+   ],
+   "answer": 0,
+   "explanation": "8^(2/3) = 4, and the negative index means the reciprocal: 1/4.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-08",
+   "subject": "mathematics",
+   "topic": "indices",
+   "difficulty": 1,
+   "question": "Solve 3^(2x) = 81.",
+   "options": [
+    "3",
+    "4",
+    "2",
+    "9"
+   ],
+   "answer": 2,
+   "explanation": "81 = 3⁴, so 2x = 4 and x = 2.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-09",
+   "subject": "mathematics",
+   "topic": "indices",
+   "difficulty": 2,
+   "question": "Evaluate log₃ (1/9).",
+   "options": [
+    "−3",
+    "2",
+    "−2",
+    "3"
+   ],
+   "answer": 2,
+   "explanation": "1/9 = 3⁻², so the log is −2.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-10",
+   "subject": "mathematics",
+   "topic": "indices",
+   "difficulty": 2,
+   "question": "Simplify log 50 + log 2 (base 10).",
+   "options": [
+    "1",
+    "log 52",
+    "2",
+    "100"
+   ],
+   "answer": 2,
+   "explanation": "log 50 + log 2 = log 100 = 2.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-11",
+   "subject": "mathematics",
+   "topic": "indices",
+   "difficulty": 1,
+   "question": "Express 0.00045 in standard form.",
+   "options": [
+    "4.5 × 10⁻⁴",
+    "4.5 × 10⁻³",
+    "45 × 10⁻⁵",
+    "4.5 × 10⁴"
+   ],
+   "answer": 0,
+   "explanation": "Move the decimal point 4 places to the right: 4.5 × 10⁻⁴.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-12",
+   "subject": "mathematics",
+   "topic": "indices",
+   "difficulty": 2,
+   "question": "If 9^x = 27, find x.",
+   "options": [
+    "3/2",
+    "2/3",
+    "1",
+    "3"
+   ],
+   "answer": 0,
+   "explanation": "3^(2x) = 3³, so 2x = 3 and x = 3/2.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-13",
+   "subject": "mathematics",
+   "topic": "indices",
+   "difficulty": 2,
+   "question": "Evaluate 16^(1/4) × 4^(1/2).",
+   "options": [
+    "2",
+    "8",
+    "16",
+    "4"
+   ],
+   "answer": 3,
+   "explanation": "16^(1/4) = 2 and 4^(1/2) = 2; 2 × 2 = 4.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-14",
+   "subject": "mathematics",
+   "topic": "quadratics",
+   "difficulty": 1,
+   "question": "Find the roots of x² − 5x + 6 = 0.",
+   "options": [
+    "2 and 3",
+    "−2 and −3",
+    "1 and 6",
+    "−1 and 6"
+   ],
+   "answer": 0,
+   "explanation": "(x − 2)(x − 3) = 0, so x = 2 or 3.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-15",
+   "subject": "mathematics",
+   "topic": "quadratics",
+   "difficulty": 2,
+   "question": "Find the sum of the roots of 2x² − 7x + 3 = 0.",
+   "options": [
+    "−7/2",
+    "7/2",
+    "3/2",
+    "7"
+   ],
+   "answer": 1,
+   "explanation": "Sum = −b/a = 7/2.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-16",
+   "subject": "mathematics",
+   "topic": "quadratics",
+   "difficulty": 2,
+   "question": "Find the product of the roots of 3x² + 5x − 2 = 0.",
+   "options": [
+    "−5/3",
+    "−2/3",
+    "2/3",
+    "5/3"
+   ],
+   "answer": 1,
+   "explanation": "Product = c/a = −2/3.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-17",
+   "subject": "mathematics",
+   "topic": "quadratics",
+   "difficulty": 2,
+   "question": "Which equation has roots 2 and −3?",
+   "options": [
+    "x² − x − 6 = 0",
+    "x² + 5x + 6 = 0",
+    "x² − 5x − 6 = 0",
+    "x² + x − 6 = 0"
+   ],
+   "answer": 3,
+   "explanation": "(x − 2)(x + 3) = x² + x − 6.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-18",
+   "subject": "mathematics",
+   "topic": "quadratics",
+   "difficulty": 2,
+   "question": "The roots of x² + 4x + 4 = 0 are",
+   "options": [
+    "real and different",
+    "real and equal",
+    "not real",
+    "both zero"
+   ],
+   "answer": 1,
+   "explanation": "Discriminant b² − 4ac = 16 − 16 = 0, so the roots are equal (x = −2).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-19",
+   "subject": "mathematics",
+   "topic": "quadratics",
+   "difficulty": 1,
+   "question": "Solve x² = 9x.",
+   "options": [
+    "x = 9 only",
+    "x = 0 or 9",
+    "x = ±3",
+    "x = 0 or −9"
+   ],
+   "answer": 1,
+   "explanation": "x² − 9x = 0, so x(x − 9) = 0. Don't divide by x, or you lose x = 0.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-20",
+   "subject": "mathematics",
+   "topic": "quadratics",
+   "difficulty": 3,
+   "question": "For what values of k does x² + kx + 9 = 0 have equal roots?",
+   "options": [
+    "±3",
+    "±9",
+    "±6",
+    "±18"
+   ],
+   "answer": 2,
+   "explanation": "Equal roots need k² − 4(1)(9) = 0, so k² = 36 and k = ±6.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-21",
+   "subject": "mathematics",
+   "topic": "quadratics",
+   "difficulty": 3,
+   "question": "Find the minimum value of y = x² − 4x + 7.",
+   "options": [
+    "3",
+    "2",
+    "4",
+    "7"
+   ],
+   "answer": 0,
+   "explanation": "y = (x − 2)² + 3, which is smallest (3) when x = 2.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-22",
+   "subject": "mathematics",
+   "topic": "quadratics",
+   "difficulty": 1,
+   "question": "Solve x² − 16 = 0.",
+   "options": [
+    "±4",
+    "4 only",
+    "±8",
+    "16"
+   ],
+   "answer": 0,
+   "explanation": "x² = 16, so x = 4 or −4.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-23",
+   "subject": "mathematics",
+   "topic": "quadratics",
+   "difficulty": 2,
+   "question": "Factorise 2x² + x − 6.",
+   "options": [
+    "(2x − 3)(x + 2)",
+    "(2x + 3)(x − 2)",
+    "(x − 3)(2x + 2)",
+    "(2x − 2)(x + 3)"
+   ],
+   "answer": 0,
+   "explanation": "(2x − 3)(x + 2) = 2x² + 4x − 3x − 6 = 2x² + x − 6.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-24",
+   "subject": "mathematics",
+   "topic": "quadratics",
+   "difficulty": 3,
+   "question": "If α and β are the roots of x² − 3x − 4 = 0, find α² + β².",
+   "options": [
+    "1",
+    "9",
+    "25",
+    "17"
+   ],
+   "answer": 3,
+   "explanation": "α + β = 3 and αβ = −4. α² + β² = (α + β)² − 2αβ = 9 + 8 = 17.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-25",
+   "subject": "mathematics",
+   "topic": "quadratics",
+   "difficulty": 2,
+   "question": "Find the x-coordinate of the turning point of y = 2x² − 8x + 1.",
+   "options": [
+    "−2",
+    "4",
+    "2",
+    "8"
+   ],
+   "answer": 2,
+   "explanation": "x = −b ÷ 2a = 8 ÷ 4 = 2.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-26",
+   "subject": "mathematics",
+   "topic": "quadratics",
+   "difficulty": 1,
+   "question": "Solve (x − 1)(x + 4) = 0.",
+   "options": [
+    "1 or 4",
+    "−1 or 4",
+    "1 or −4",
+    "−1 or −4"
+   ],
+   "answer": 2,
+   "explanation": "Set each bracket to zero: x = 1 or x = −4.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-27",
+   "subject": "mathematics",
+   "topic": "differentiation",
+   "difficulty": 1,
+   "question": "Differentiate 3x⁴ with respect to x.",
+   "options": [
+    "12x³",
+    "3x³",
+    "4x³",
+    "12x⁴"
+   ],
+   "answer": 0,
+   "explanation": "Bring the power down and reduce it by 1: 3 × 4x³ = 12x³.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-28",
+   "subject": "mathematics",
+   "topic": "differentiation",
+   "difficulty": 1,
+   "question": "Find dy/dx if y = x² + 5x − 7.",
+   "options": [
+    "2x − 7",
+    "x + 5",
+    "2x + 5",
+    "2x + 5x"
+   ],
+   "answer": 2,
+   "explanation": "d(x²) = 2x, d(5x) = 5, and a constant gives 0.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-29",
+   "subject": "mathematics",
+   "topic": "differentiation",
+   "difficulty": 2,
+   "question": "Find dy/dx if y = 1/x.",
+   "options": [
+    "1/x²",
+    "−1/x²",
+    "ln x",
+    "−1/x"
+   ],
+   "answer": 1,
+   "explanation": "y = x⁻¹, so dy/dx = −x⁻² = −1/x².",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-30",
+   "subject": "mathematics",
+   "topic": "differentiation",
+   "difficulty": 2,
+   "question": "Find the gradient of y = x³ − 2x at x = 2.",
+   "options": [
+    "4",
+    "10",
+    "6",
+    "12"
+   ],
+   "answer": 1,
+   "explanation": "dy/dx = 3x² − 2 = 12 − 2 = 10.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-31",
+   "subject": "mathematics",
+   "topic": "differentiation",
+   "difficulty": 1,
+   "question": "Differentiate sin x with respect to x.",
+   "options": [
+    "−cos x",
+    "−sin x",
+    "tan x",
+    "cos x"
+   ],
+   "answer": 3,
+   "explanation": "d/dx (sin x) = cos x.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-32",
+   "subject": "mathematics",
+   "topic": "differentiation",
+   "difficulty": 3,
+   "question": "Find dy/dx if y = (2x + 1)³.",
+   "options": [
+    "3(2x + 1)²",
+    "6(2x + 1)³",
+    "2(2x + 1)²",
+    "6(2x + 1)²"
+   ],
+   "answer": 3,
+   "explanation": "Chain rule: 3(2x + 1)² × 2 = 6(2x + 1)².",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-33",
+   "subject": "mathematics",
+   "topic": "differentiation",
+   "difficulty": 2,
+   "question": "At what value of x does y = x² − 6x + 5 have a stationary point?",
+   "options": [
+    "−3",
+    "5",
+    "6",
+    "3"
+   ],
+   "answer": 3,
+   "explanation": "dy/dx = 2x − 6 = 0, so x = 3.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-34",
+   "subject": "mathematics",
+   "topic": "differentiation",
+   "difficulty": 2,
+   "question": "Differentiate e^(2x) with respect to x.",
+   "options": [
+    "2e^(2x)",
+    "e^(2x)",
+    "2xe^(2x)",
+    "e^(2x)/2"
+   ],
+   "answer": 0,
+   "explanation": "d/dx e^(kx) = k e^(kx), so 2e^(2x).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-35",
+   "subject": "mathematics",
+   "topic": "differentiation",
+   "difficulty": 3,
+   "question": "Find dy/dx if y = x sin x.",
+   "options": [
+    "cos x",
+    "x cos x",
+    "sin x − x cos x",
+    "sin x + x cos x"
+   ],
+   "answer": 3,
+   "explanation": "Product rule: (1)(sin x) + (x)(cos x).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-36",
+   "subject": "mathematics",
+   "topic": "differentiation",
+   "difficulty": 3,
+   "question": "Find the maximum value of y = 4 + 6x − x².",
+   "options": [
+    "9",
+    "12",
+    "16",
+    "13"
+   ],
+   "answer": 3,
+   "explanation": "dy/dx = 6 − 2x = 0, so x = 3. Then y = 4 + 18 − 9 = 13.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-37",
+   "subject": "mathematics",
+   "topic": "differentiation",
+   "difficulty": 3,
+   "question": "A particle's distance is s = t³ − 3t² + 2 metres. What is its velocity at t = 2 s?",
+   "options": [
+    "0 m/s",
+    "2 m/s",
+    "4 m/s",
+    "12 m/s"
+   ],
+   "answer": 0,
+   "explanation": "v = ds/dt = 3t² − 6t = 12 − 12 = 0 m/s.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-38",
+   "subject": "mathematics",
+   "topic": "differentiation",
+   "difficulty": 1,
+   "question": "Differentiate ln x with respect to x.",
+   "options": [
+    "x",
+    "1/x",
+    "e^x",
+    "−1/x"
+   ],
+   "answer": 1,
+   "explanation": "d/dx (ln x) = 1/x.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-39",
+   "subject": "mathematics",
+   "topic": "probability",
+   "difficulty": 1,
+   "question": "A fair die is thrown once. What is the probability of getting an even number?",
+   "options": [
+    "1/6",
+    "1/3",
+    "2/3",
+    "1/2"
+   ],
+   "answer": 3,
+   "explanation": "Even numbers: 2, 4, 6. That's 3 out of 6 = 1/2.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-40",
+   "subject": "mathematics",
+   "topic": "probability",
+   "difficulty": 1,
+   "question": "Two fair coins are tossed. What is the probability of getting two heads?",
+   "options": [
+    "1/2",
+    "1/3",
+    "1/8",
+    "1/4"
+   ],
+   "answer": 3,
+   "explanation": "Outcomes: HH, HT, TH, TT. One of four is HH.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-41",
+   "subject": "mathematics",
+   "topic": "probability",
+   "difficulty": 1,
+   "question": "A bag has 3 red and 5 blue balls. One is picked at random. What is the probability it is red?",
+   "options": [
+    "3/5",
+    "3/8",
+    "5/8",
+    "1/3"
+   ],
+   "answer": 1,
+   "explanation": "3 red out of 8 balls = 3/8.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-42",
+   "subject": "mathematics",
+   "topic": "probability",
+   "difficulty": 1,
+   "question": "If the probability that an event happens is 0.35, what is the probability that it does not happen?",
+   "options": [
+    "0.35",
+    "0.65",
+    "0.50",
+    "1.35"
+   ],
+   "answer": 1,
+   "explanation": "P(not A) = 1 − 0.35 = 0.65.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-43",
+   "subject": "mathematics",
+   "topic": "probability",
+   "difficulty": 2,
+   "question": "Two fair dice are thrown. What is the probability that the total is 7?",
+   "options": [
+    "1/12",
+    "1/9",
+    "1/6",
+    "7/36"
+   ],
+   "answer": 2,
+   "explanation": "Six pairs give 7 (1+6, 2+5, 3+4, 4+3, 5+2, 6+1) out of 36: 6/36 = 1/6.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-44",
+   "subject": "mathematics",
+   "topic": "probability",
+   "difficulty": 1,
+   "question": "A card is drawn from a well-shuffled pack of 52. What is the probability that it is a king?",
+   "options": [
+    "1/52",
+    "1/13",
+    "1/4",
+    "4/13"
+   ],
+   "answer": 1,
+   "explanation": "4 kings out of 52 cards = 1/13.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-45",
+   "subject": "mathematics",
+   "topic": "probability",
+   "difficulty": 2,
+   "question": "A and B are independent events with P(A) = 1/2 and P(B) = 1/3. Find P(A and B).",
+   "options": [
+    "1/3",
+    "1/6",
+    "5/6",
+    "2/3"
+   ],
+   "answer": 1,
+   "explanation": "For independent events, multiply: 1/2 × 1/3 = 1/6.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-46",
+   "subject": "mathematics",
+   "topic": "probability",
+   "difficulty": 2,
+   "question": "A and B are mutually exclusive with P(A) = 0.3 and P(B) = 0.4. Find P(A or B).",
+   "options": [
+    "0.12",
+    "0.1",
+    "0.7",
+    "1.0"
+   ],
+   "answer": 2,
+   "explanation": "Mutually exclusive events can't happen together, so add: 0.3 + 0.4 = 0.7.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-47",
+   "subject": "mathematics",
+   "topic": "probability",
+   "difficulty": 3,
+   "question": "A bag holds 4 red and 6 white balls. Two are drawn one after the other without replacement. What is the probability that both are red?",
+   "options": [
+    "2/15",
+    "4/25",
+    "1/5",
+    "2/5"
+   ],
+   "answer": 0,
+   "explanation": "4/10 × 3/9 = 12/90 = 2/15.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-48",
+   "subject": "mathematics",
+   "topic": "probability",
+   "difficulty": 2,
+   "question": "In how many ways can 3 people sit in a row of 3 chairs?",
+   "options": [
+    "3",
+    "6",
+    "9",
+    "27"
+   ],
+   "answer": 1,
+   "explanation": "3 × 2 × 1 = 6.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-49",
+   "subject": "mathematics",
+   "topic": "probability",
+   "difficulty": 3,
+   "question": "A fair die is thrown twice. What is the probability of getting at least one six?",
+   "options": [
+    "1/6",
+    "1/3",
+    "11/36",
+    "25/36"
+   ],
+   "answer": 2,
+   "explanation": "P(no six) = 5/6 × 5/6 = 25/36, so P(at least one) = 1 − 25/36 = 11/36.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "mat-50",
+   "subject": "mathematics",
+   "topic": "probability",
+   "difficulty": 1,
+   "question": "The probability of an impossible event is",
+   "options": [
+    "0",
+    "1/2",
+    "1",
+    "−1"
+   ],
+   "answer": 0,
+   "explanation": "Probabilities run from 0 (impossible) to 1 (certain).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-01",
+   "subject": "english",
+   "topic": "lexis",
+   "difficulty": 2,
+   "question": "Choose the option nearest in meaning to the word in capitals: The manager was ADAMANT about the decision.",
+   "options": [
+    "unsure",
+    "unyielding",
+    "angry",
+    "pleased"
+   ],
+   "answer": 1,
+   "explanation": "Adamant means firm and refusing to change your mind.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-02",
+   "subject": "english",
+   "topic": "lexis",
+   "difficulty": 2,
+   "question": "Choose the option opposite in meaning to the word in capitals: The speech was VERBOSE.",
+   "options": [
+    "wordy",
+    "loud",
+    "boring",
+    "concise"
+   ],
+   "answer": 3,
+   "explanation": "Verbose means using too many words; the opposite is concise.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-03",
+   "subject": "english",
+   "topic": "lexis",
+   "difficulty": 1,
+   "question": "Choose the option nearest in meaning to the word in capitals: She is a METICULOUS planner.",
+   "options": [
+    "careless",
+    "quick",
+    "popular",
+    "careful"
+   ],
+   "answer": 3,
+   "explanation": "Meticulous means paying great attention to detail.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-04",
+   "subject": "english",
+   "topic": "lexis",
+   "difficulty": 2,
+   "question": "Choose the option opposite in meaning to the word in capitals: The weather is CLEMENT today.",
+   "options": [
+    "mild",
+    "harsh",
+    "bright",
+    "cool"
+   ],
+   "answer": 1,
+   "explanation": "Clement weather is mild and pleasant; the opposite is harsh.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-05",
+   "subject": "english",
+   "topic": "lexis",
+   "difficulty": 1,
+   "question": "Fill the gap: The principal ______ the students to be punctual.",
+   "options": [
+    "admired",
+    "admitted",
+    "admonished",
+    "adjoined"
+   ],
+   "answer": 2,
+   "explanation": "To admonish is to warn or advise firmly, which fits the sentence.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-06",
+   "subject": "english",
+   "topic": "lexis",
+   "difficulty": 1,
+   "question": "Choose the option nearest in meaning to the word in capitals: The athlete's performance was MEDIOCRE.",
+   "options": [
+    "outstanding",
+    "terrible",
+    "average",
+    "improving"
+   ],
+   "answer": 2,
+   "explanation": "Mediocre means only ordinary or average.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-07",
+   "subject": "english",
+   "topic": "lexis",
+   "difficulty": 2,
+   "question": "Choose the option opposite in meaning to the word in capitals: He gave a CANDID answer.",
+   "options": [
+    "honest",
+    "evasive",
+    "short",
+    "polite"
+   ],
+   "answer": 1,
+   "explanation": "Candid means frank and open; the opposite is evasive.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-08",
+   "subject": "english",
+   "topic": "lexis",
+   "difficulty": 1,
+   "question": "Choose the correctly spelt word.",
+   "options": [
+    "accomodation",
+    "acommodation",
+    "accommodation",
+    "accommadation"
+   ],
+   "answer": 2,
+   "explanation": "Accommodation has double c and double m.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-09",
+   "subject": "english",
+   "topic": "lexis",
+   "difficulty": 1,
+   "question": "Choose the option nearest in meaning to the word in capitals: The soldiers showed great FORTITUDE.",
+   "options": [
+    "fear",
+    "courage",
+    "wealth",
+    "speed"
+   ],
+   "answer": 1,
+   "explanation": "Fortitude is courage and strength in the face of difficulty.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-10",
+   "subject": "english",
+   "topic": "lexis",
+   "difficulty": 3,
+   "question": "Choose the option opposite in meaning to the word in capitals: The minister was AMBIVALENT about the plan.",
+   "options": [
+    "uncertain",
+    "angry",
+    "certain",
+    "quiet"
+   ],
+   "answer": 2,
+   "explanation": "Ambivalent means having mixed feelings; the opposite is certain.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-11",
+   "subject": "english",
+   "topic": "lexis",
+   "difficulty": 1,
+   "question": "Choose the option nearest in meaning to the word in capitals: The thief was APPREHENDED at the gate.",
+   "options": [
+    "released",
+    "seen",
+    "arrested",
+    "beaten"
+   ],
+   "answer": 2,
+   "explanation": "To apprehend a suspect is to arrest them.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-12",
+   "subject": "english",
+   "topic": "lexis",
+   "difficulty": 1,
+   "question": "Fill the gap: She is very good ______ mathematics.",
+   "options": [
+    "in",
+    "on",
+    "with",
+    "at"
+   ],
+   "answer": 3,
+   "explanation": "We say good at a subject or skill.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-13",
+   "subject": "english",
+   "topic": "lexis",
+   "difficulty": 2,
+   "question": "Choose the option opposite in meaning to the word in capitals: It was only a TRANSIENT pleasure.",
+   "options": [
+    "brief",
+    "false",
+    "shared",
+    "lasting"
+   ],
+   "answer": 3,
+   "explanation": "Transient means short-lived; the opposite is lasting.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-14",
+   "subject": "english",
+   "topic": "concord",
+   "difficulty": 2,
+   "question": "Neither the teacher nor the students ______ present.",
+   "options": [
+    "were",
+    "was",
+    "is",
+    "has been"
+   ],
+   "answer": 0,
+   "explanation": "With neither … nor, the verb agrees with the nearer subject: students (plural), so were.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-15",
+   "subject": "english",
+   "topic": "concord",
+   "difficulty": 1,
+   "question": "Each of the boys ______ a bicycle.",
+   "options": [
+    "have",
+    "having",
+    "are having",
+    "has"
+   ],
+   "answer": 3,
+   "explanation": "Each is singular, so it takes has.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-16",
+   "subject": "english",
+   "topic": "concord",
+   "difficulty": 1,
+   "question": "The news ______ shocking.",
+   "options": [
+    "was",
+    "were",
+    "are",
+    "have been"
+   ],
+   "answer": 0,
+   "explanation": "News is an uncountable noun and takes a singular verb.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-17",
+   "subject": "english",
+   "topic": "concord",
+   "difficulty": 1,
+   "question": "Mathematics ______ my best subject.",
+   "options": [
+    "are",
+    "were",
+    "have been",
+    "is"
+   ],
+   "answer": 3,
+   "explanation": "Names of subjects ending in -s (mathematics, physics) are singular.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-18",
+   "subject": "english",
+   "topic": "concord",
+   "difficulty": 3,
+   "question": "The committee ______ divided in their opinions.",
+   "options": [
+    "was",
+    "is",
+    "were",
+    "has"
+   ],
+   "answer": 2,
+   "explanation": "'Divided in their opinions' shows the members acting as individuals, so the plural verb were is used.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-19",
+   "subject": "english",
+   "topic": "concord",
+   "difficulty": 2,
+   "question": "Ten kilometres ______ a long distance to walk.",
+   "options": [
+    "are",
+    "is",
+    "were",
+    "have been"
+   ],
+   "answer": 1,
+   "explanation": "An amount treated as one unit takes a singular verb.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-20",
+   "subject": "english",
+   "topic": "concord",
+   "difficulty": 3,
+   "question": "She is one of the girls who ______ in the choir.",
+   "options": [
+    "sings",
+    "is singing",
+    "sing",
+    "has sung"
+   ],
+   "answer": 2,
+   "explanation": "'Who' refers to 'the girls' (plural), so the verb is sing.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-21",
+   "subject": "english",
+   "topic": "concord",
+   "difficulty": 1,
+   "question": "The scissors ______ on the table.",
+   "options": [
+    "are",
+    "is",
+    "was",
+    "has been"
+   ],
+   "answer": 0,
+   "explanation": "Scissors is always plural (like trousers and spectacles).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-22",
+   "subject": "english",
+   "topic": "concord",
+   "difficulty": 2,
+   "question": "Bread and butter ______ my favourite breakfast.",
+   "options": [
+    "are",
+    "is",
+    "were",
+    "have been"
+   ],
+   "answer": 1,
+   "explanation": "Bread and butter is one dish, so it takes a singular verb.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-23",
+   "subject": "english",
+   "topic": "concord",
+   "difficulty": 1,
+   "question": "Everybody ______ to bring a pen.",
+   "options": [
+    "have",
+    "has",
+    "are",
+    "were"
+   ],
+   "answer": 1,
+   "explanation": "Everybody, everyone and somebody are singular.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-24",
+   "subject": "english",
+   "topic": "concord",
+   "difficulty": 2,
+   "question": "The jury ______ returned its verdict.",
+   "options": [
+    "have",
+    "has",
+    "were",
+    "are"
+   ],
+   "answer": 1,
+   "explanation": "'Its verdict' shows the jury acting as one unit, so has.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-25",
+   "subject": "english",
+   "topic": "concord",
+   "difficulty": 2,
+   "question": "Either John or his brothers ______ coming.",
+   "options": [
+    "are",
+    "is",
+    "was",
+    "has"
+   ],
+   "answer": 0,
+   "explanation": "With either … or, the verb agrees with the nearer subject: brothers, so are.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-26",
+   "subject": "english",
+   "topic": "concord",
+   "difficulty": 2,
+   "question": "The number of students ______ increased this year.",
+   "options": [
+    "have",
+    "has",
+    "are",
+    "were"
+   ],
+   "answer": 1,
+   "explanation": "'The number of' is singular; 'a number of' is plural.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-27",
+   "subject": "english",
+   "topic": "oral",
+   "difficulty": 1,
+   "question": "Choose the word that has the same vowel sound as 'seat'.",
+   "options": [
+    "feet",
+    "sit",
+    "set",
+    "sat"
+   ],
+   "answer": 0,
+   "explanation": "Seat and feet both have the long /iː/ sound.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-28",
+   "subject": "english",
+   "topic": "oral",
+   "difficulty": 1,
+   "question": "Choose the word that has the same vowel sound as 'cup'.",
+   "options": [
+    "cop",
+    "love",
+    "cap",
+    "cope"
+   ],
+   "answer": 1,
+   "explanation": "Cup and love both have the /ʌ/ sound.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-29",
+   "subject": "english",
+   "topic": "oral",
+   "difficulty": 2,
+   "question": "Choose the correct stress pattern for 'photograph' (capitals show the stressed syllable).",
+   "options": [
+    "PHOtograph",
+    "phoTOgraph",
+    "photoGRAPH",
+    "photoGRAPHS"
+   ],
+   "answer": 0,
+   "explanation": "Photograph is stressed on the first syllable: PHO-to-graph.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-30",
+   "subject": "english",
+   "topic": "oral",
+   "difficulty": 2,
+   "question": "In 'They will preSENT the award', the word 'present' (a verb) is stressed on the",
+   "options": [
+    "first syllable",
+    "third syllable",
+    "no syllable",
+    "second syllable"
+   ],
+   "answer": 3,
+   "explanation": "Verbs like present, record and object are stressed on the second syllable; the nouns are stressed on the first.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-31",
+   "subject": "english",
+   "topic": "oral",
+   "difficulty": 1,
+   "question": "Which word contains the sound /θ/ as in 'thin'?",
+   "options": [
+    "think",
+    "this",
+    "then",
+    "those"
+   ],
+   "answer": 0,
+   "explanation": "Think begins with the voiceless /θ/. This, then and those begin with the voiced /ð/.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-32",
+   "subject": "english",
+   "topic": "oral",
+   "difficulty": 1,
+   "question": "In which word is the letter 'b' silent?",
+   "options": [
+    "bulb",
+    "rib",
+    "absent",
+    "climb"
+   ],
+   "answer": 3,
+   "explanation": "In climb, the final b is not pronounced.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-33",
+   "subject": "english",
+   "topic": "oral",
+   "difficulty": 2,
+   "question": "The 'ch' in 'chemist' is pronounced like the sound at the start of",
+   "options": [
+    "church",
+    "machine",
+    "cake",
+    "cheese"
+   ],
+   "answer": 2,
+   "explanation": "In chemist, ch sounds like /k/, as in cake.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-34",
+   "subject": "english",
+   "topic": "oral",
+   "difficulty": 1,
+   "question": "Which word rhymes with 'blood'?",
+   "options": [
+    "food",
+    "good",
+    "flood",
+    "mood"
+   ],
+   "answer": 2,
+   "explanation": "Blood and flood both use the /ʌ/ sound.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-35",
+   "subject": "english",
+   "topic": "oral",
+   "difficulty": 2,
+   "question": "The 'ch' in 'machine' sounds like the first sound in",
+   "options": [
+    "ship",
+    "chip",
+    "kit",
+    "jam"
+   ],
+   "answer": 0,
+   "explanation": "In machine, ch sounds like /ʃ/, as in ship.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-36",
+   "subject": "english",
+   "topic": "oral",
+   "difficulty": 1,
+   "question": "How many syllables are there in the word 'education'?",
+   "options": [
+    "2",
+    "3",
+    "5",
+    "4"
+   ],
+   "answer": 3,
+   "explanation": "ed-u-ca-tion: 4 syllables.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-37",
+   "subject": "english",
+   "topic": "oral",
+   "difficulty": 3,
+   "question": "Choose the correct stress pattern for 'interpret' (capitals show the stressed syllable).",
+   "options": [
+    "inTERpret",
+    "INterpret",
+    "interPRET",
+    "INTERpret"
+   ],
+   "answer": 0,
+   "explanation": "Interpret is stressed on the second syllable: in-TER-pret.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-38",
+   "subject": "english",
+   "topic": "oral",
+   "difficulty": 2,
+   "question": "Which word contains a diphthong?",
+   "options": [
+    "boy",
+    "bit",
+    "bed",
+    "bat"
+   ],
+   "answer": 0,
+   "explanation": "Boy has the /ɔɪ/ diphthong, a glide between two vowel sounds.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-39",
+   "subject": "english",
+   "topic": "idioms",
+   "difficulty": 1,
+   "question": "To 'bury the hatchet' means to",
+   "options": [
+    "make peace",
+    "hide a weapon",
+    "dig a grave",
+    "start a fight"
+   ],
+   "answer": 0,
+   "explanation": "It means to end a quarrel and become friends again.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-40",
+   "subject": "english",
+   "topic": "idioms",
+   "difficulty": 1,
+   "question": "A 'bone of contention' is",
+   "options": [
+    "a broken bone",
+    "a subject of disagreement",
+    "a kind of food",
+    "a peace offering"
+   ],
+   "answer": 1,
+   "explanation": "It is the issue people keep arguing about.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-41",
+   "subject": "english",
+   "topic": "idioms",
+   "difficulty": 1,
+   "question": "'The wind whispered through the trees' is an example of",
+   "options": [
+    "simile",
+    "hyperbole",
+    "personification",
+    "alliteration"
+   ],
+   "answer": 2,
+   "explanation": "The wind is given a human action (whispering): personification.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-42",
+   "subject": "english",
+   "topic": "idioms",
+   "difficulty": 1,
+   "question": "'He is as brave as a lion' is an example of",
+   "options": [
+    "simile",
+    "metaphor",
+    "irony",
+    "onomatopoeia"
+   ],
+   "answer": 0,
+   "explanation": "A comparison using 'as' or 'like' is a simile.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-43",
+   "subject": "english",
+   "topic": "idioms",
+   "difficulty": 1,
+   "question": "To 'spill the beans' means to",
+   "options": [
+    "waste food",
+    "reveal a secret",
+    "cook carelessly",
+    "tell a lie"
+   ],
+   "answer": 1,
+   "explanation": "It means to let out secret information.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-44",
+   "subject": "english",
+   "topic": "idioms",
+   "difficulty": 2,
+   "question": "To 'take the bull by the horns' means to",
+   "options": [
+    "work on a farm",
+    "be very stubborn",
+    "deal with a problem boldly",
+    "run away from danger"
+   ],
+   "answer": 2,
+   "explanation": "It means facing a difficult situation directly and with courage.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-45",
+   "subject": "english",
+   "topic": "idioms",
+   "difficulty": 1,
+   "question": "'Life is a journey' is an example of",
+   "options": [
+    "simile",
+    "hyperbole",
+    "metaphor",
+    "euphemism"
+   ],
+   "answer": 2,
+   "explanation": "It says life IS a journey (no 'like' or 'as'): a metaphor.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-46",
+   "subject": "english",
+   "topic": "idioms",
+   "difficulty": 3,
+   "question": "'The pen is mightier than the sword' is an example of",
+   "options": [
+    "simile",
+    "metonymy",
+    "hyperbole",
+    "alliteration"
+   ],
+   "answer": 1,
+   "explanation": "'Pen' stands for writing and 'sword' for war: things named by something closely linked to them (metonymy).",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-47",
+   "subject": "english",
+   "topic": "idioms",
+   "difficulty": 1,
+   "question": "'I have told you a million times' is an example of",
+   "options": [
+    "understatement",
+    "litotes",
+    "irony",
+    "hyperbole"
+   ],
+   "answer": 3,
+   "explanation": "A deliberate exaggeration for effect is hyperbole.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-48",
+   "subject": "english",
+   "topic": "idioms",
+   "difficulty": 1,
+   "question": "'Peter Piper picked a peck of pickled peppers' is an example of",
+   "options": [
+    "assonance",
+    "onomatopoeia",
+    "rhyme",
+    "alliteration"
+   ],
+   "answer": 3,
+   "explanation": "Repeating the same consonant sound at the start of nearby words is alliteration.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-49",
+   "subject": "english",
+   "topic": "idioms",
+   "difficulty": 2,
+   "question": "A 'wet blanket' is a person who",
+   "options": [
+    "spoils other people's fun",
+    "sweats a lot",
+    "cries easily",
+    "is always cold"
+   ],
+   "answer": 0,
+   "explanation": "A wet blanket dampens everyone's enthusiasm.",
+   "source": "JAMB-style (syllabus pattern)"
+  },
+  {
+   "id": "eng-50",
+   "subject": "english",
+   "topic": "idioms",
+   "difficulty": 1,
+   "question": "To 'burn the midnight oil' means to",
+   "options": [
+    "waste fuel",
+    "start a fire",
+    "cook at night",
+    "work or study late into the night"
+   ],
+   "answer": 3,
+   "explanation": "It means staying up late to work or read.",
+   "source": "JAMB-style (syllabus pattern)"
+  }
+ ]
+}

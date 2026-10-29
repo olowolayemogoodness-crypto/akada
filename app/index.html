@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edulink Prep</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="styles.css">
+<script type="importmap">
+{ "imports": {
+  "three": "../node_modules/three/build/three.module.js",
+  "three/addons/": "../node_modules/three/examples/jsm/",
+  "gsap": "../node_modules/gsap/index.js"
+} }
+</script>
+</head>
+<body>
+<div id="app"></div>
+<div id="modal-root"></div>
+<div id="mascot-root" class="mascot" hidden></div>
+<div id="toast" class="toast" hidden></div>
+<script>document.documentElement.dataset.platform = (window.prepStore && window.prepStore.platform) || 'web';</script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
