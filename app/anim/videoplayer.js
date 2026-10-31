@@ -47,7 +47,7 @@ export function mountVideo(host, video, { practiseTopic } = {}) {
       const words = text.split(/\s+/).length;
       const d = typeof b === 'object' && b.d ? b.d : Math.max(3.2, words / 2.75 + 0.6);
       const s = t0 - sc.start, e = s + d;
-      beats.push({ text, start: t0, end: t0 + d, scene: si });
+      beats.push({ text, spoken: (typeof b === 'object' && b.speak) || text, start: t0, end: t0 + d, scene: si });
       const ch = (sc.chapters || [[0, sc.chapter]]).find(([k]) => k === bi);
       if (ch) chapters.push({ title: ch[1], at: t0 });
       t0 += d;
@@ -118,7 +118,7 @@ export function mountVideo(host, video, { practiseTopic } = {}) {
       beatIdx = bi;
       cap.textContent = beats[bi].text;
       cap.parentElement.classList.remove('in'); void cap.offsetWidth; cap.parentElement.classList.add('in');
-      if (playing) speak(beats[bi].text);
+      if (playing) speak(beats[bi].spoken);
       root.querySelectorAll('.vchapters button').forEach((b, i) => b.classList.toggle('on', t >= chapters[i].at && (i === chapters.length - 1 || t < chapters[i + 1].at)));
     }
     const f = t / total;
@@ -154,7 +154,7 @@ export function mountVideo(host, video, { practiseTopic } = {}) {
     const was = playing; stopSpeech();
     t = clamp(nt, 0, total - 0.01); ended = false; $('.vend').hidden = true; $('.vbig').hidden = true;
     beatIdx = -1; playing = false; render(); playing = was;
-    if (was && voice) speak(beats[beatIdx].text);
+    if (was && voice) speak(beats[beatIdx].spoken);
   }
 
   // ---- controls
@@ -165,9 +165,9 @@ export function mountVideo(host, video, { practiseTopic } = {}) {
     switch (b.dataset.v) {
       case 'toggle': return setPlaying(!playing);
       case 'replay': return seek(0), setPlaying(true);
-      case 'voice': voice = !voice; b.innerHTML = voice ? ICON.voice : ICON.mute; b.classList.toggle('off', !voice); if (!voice) stopSpeech(); else if (playing) speak(beats[beatIdx].text); return;
+      case 'voice': voice = !voice; b.innerHTML = voice ? ICON.voice : ICON.mute; b.classList.toggle('off', !voice); if (!voice) stopSpeech(); else if (playing) speak(beats[beatIdx].spoken); return;
       case 'cc': ccOn = !ccOn; b.classList.toggle('on', ccOn); capBox.classList.toggle('hidden', !ccOn); return;
-      case 'rate': rate = rate === 1 ? 1.25 : rate === 1.25 ? 1.5 : rate === 1.5 ? 0.85 : 1; b.textContent = rate + '×'; if (playing && voice) speak(beats[beatIdx].text); return;
+      case 'rate': rate = rate === 1 ? 1.25 : rate === 1.25 ? 1.5 : rate === 1.5 ? 0.85 : 1; b.textContent = rate + '×'; if (playing && voice) speak(beats[beatIdx].spoken); return;
       case 'full': return document.fullscreenElement ? document.exitFullscreen() : root.requestFullscreen?.();
     }
   });

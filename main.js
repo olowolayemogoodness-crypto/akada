@@ -1,4 +1,4 @@
-// Edulink Prep: Electron main process. Opens the window and saves progress to disk.
+// Edu: Electron main process. Opens the window and saves progress to disk.
 const { app, BrowserWindow, ipcMain, shell } = require('electron');
 const fs = require('fs');
 const path = require('path');
@@ -21,7 +21,7 @@ function createWindow() {
     height: 860,
     minWidth: 980,
     minHeight: 680,
-    title: 'Edulink Prep',
+    title: 'Edu',
     backgroundColor: '#FFFFFF',
     // macOS: content runs under the title bar, with the traffic lights inset.
     // Windows and Linux: a normal window frame (so close/minimise buttons always show), no menu bar.

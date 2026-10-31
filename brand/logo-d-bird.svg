@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="116" fill="#FDE68A"/>
+  <!-- Ebi, a weaver bird (the weaver is found all over Nigeria and builds clever nests) -->
+  <path d="M150 300 Q120 360 170 400 L210 380 Z" fill="#C2410C"/>
+  <ellipse cx="262" cy="292" rx="132" ry="128" fill="#F97316"/>
+  <ellipse cx="282" cy="330" rx="78" ry="70" fill="#FFF7ED"/>
+  <path d="M232 170 Q250 120 288 150 Q296 116 322 140 Q300 150 300 172 Z" fill="#C2410C"/>
+  <circle cx="228" cy="250" r="34" fill="#fff"/><circle cx="312" cy="250" r="34" fill="#fff"/>
+  <circle cx="236" cy="256" r="17" fill="#1C1917"/><circle cx="318" cy="256" r="17" fill="#1C1917"/>
+  <circle cx="242" cy="249" r="6" fill="#fff"/><circle cx="324" cy="249" r="6" fill="#fff"/>
+  <path d="M252 286 L290 286 L271 314 Z" fill="#1C1917" stroke="#1C1917" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M232 412 v26 M300 412 v26" stroke="#9A3412" stroke-width="12" stroke-linecap="round"/>
+</svg>

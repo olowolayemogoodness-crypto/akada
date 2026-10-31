@@ -1,6 +1,6 @@
 # Code of conduct
 
-Edulink Prep is built by and for students and teachers. Many contributors are students themselves.
+Edu is built by and for students and teachers. Many contributors are students themselves.
 
 - Be kind and patient, especially with first-time contributors.
 - Critique work, never people.

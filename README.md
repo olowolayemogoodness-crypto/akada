@@ -1,85 +1,83 @@
-# Edulink Prep
+# Edu
 
-**Free, open-source exam practice that works without internet, on the computers schools already have.**
-
-Edulink Prep is a CBT (computer-based test) practice app for Nigeria's JAMB UTME. A student takes a timed mock exam that looks and works like the real one. Edulink Prep then works out *why* they lost marks (a concept they don't understand yet, rushing, second-guessing, or tiring at the end), shows them exactly what to fix, and teaches it with notes, interactive 3D explainers and narrated video lessons. All of it works offline.
+**Free, open-source learning for Nigerian students, one swipe at a time.** Short practical videos, a learning map, notes, quick quizzes and JAMB CBT practice. Works offline, on phones and on the computers schools already have.
 
 > Made in Nigeria by students at the Federal University of Technology, Akure (FUTA), as part of [Edulink](https://joinedulink.com).
 
+- **Website:** https://edu.joinedulink.com
+- **Android app:** [download the APK](https://edu.joinedulink.com/downloads/edu.apk)
+- **Computers:** installers on the [Releases](../../releases) page
+
 ## Why
 
-Most Nigerian candidates sit the UTME on a computer, but many have never practised on one, and many schools have only a few old laptops and little or no internet. Practice apps usually need data, give a score but no diagnosis, and cost money. Edulink Prep is free, runs offline, and focuses on what each learner should do next.
+Students already spend hours scrolling short videos. Edu turns that habit into learning: each short is under a minute, ends on a question that leads into the next one, and is followed by a quick check. The notes carry the full detail, and the learning map shows exactly what to learn next. It's free, needs no account, and works without data once installed. It doesn't replace school; it's for every student who can't afford extra lessons.
 
 ## What it does
 
-- **Real CBT experience.** Timed full mocks across English, Physics, Chemistry and Mathematics, with a question palette, flagging, keyboard shortcuts and an on-screen calculator.
-- **Diagnosis, not just a score.** Every answer is timed. The engine tracks mastery per topic and explains each lost mark: *concept gap*, *rushed*, *changed a right answer*, *skipped* or *ran out of steam*.
-- **Learning-pattern detection.** Edu, the study buddy, spots patterns across all your practice (for example, "answers under 8 seconds are right 24% of the time, compared with 75% when you slow down") and gives a personalised study plan.
-- **Learn it properly.** A note bank for every topic with worked examples, interactive Three.js explainers (projectiles, waves, induction, density, equilibrium and more), animated maths scenes, kinetic typography for English, and narrated motion-graphics video lessons.
-- **Oral English with sound.** Phonetic transcriptions (IPA) next to every word, with tap-to-hear pronunciation.
-- **Offline AI tutor (optional).** On computers with 8 GB of memory or more, a local AI model (through [Ollama](https://ollama.com)) explains any question step by step. Nothing is sent to the internet.
+- **Learning map.** Every subject laid out unit by unit, from the JAMB and WAEC syllabuses, like levels in a game. Lessons, checkpoints, a daily streak and XP.
+- **Shorts.** Practical science in 15 to 40 seconds: narrated motion graphics with captions, stickers and a cliffhanger at the end. A question card follows each one.
+- **Notes.** A clear, original note for every lesson, with equations, a worked example and the common trap.
+- **Quick checks and practice.** Instant feedback with the reason, on every question.
+- **Full JAMB CBT mock (computer).** A timed mock exam that looks and works like the real one, with a diagnosis of *why* each mark was lost, interactive 3D explainers and an optional offline AI tutor.
 - **Private by design.** Progress stays on the device. No account, no tracking.
 
-## Download
+## Run it yourself
 
-Ready-made installers are on the [Releases](../../releases) page:
-
-| Computer | File |
-|---|---|
-| Windows 10 or 11 (64-bit or 32-bit) | `Edulink-Prep-Setup-x.y.z.exe` (installer) or `Edulink-Prep-Portable-x.y.z.exe` (no install, runs from a USB stick) |
-| Mac (Apple Silicon or Intel) | `Edulink Prep-x.y.z-universal.dmg` |
-| Linux | `Edulink Prep-x.y.z.AppImage` |
-
-**Minimum:** 4 GB of memory, about 300 MB of disk space, no internet. The AI tutor needs 8 GB of memory or more.
-
-The installers aren't code-signed yet, so Windows may show "Windows protected your PC" (click **More info → Run anyway**), and a Mac may ask you to approve the app in **System Settings → Privacy & Security**.
-
-## Run from source
-
-You need [Node.js](https://nodejs.org) 20 or newer.
+You need [Node.js](https://nodejs.org) 22 or newer.
 
 ```
-git clone https://github.com/olowolayemogoodness-crypto/edulink-prep.git
-cd edulink-prep
+git clone https://github.com/olowolayemogoodness-crypto/edu.git
+cd edu
 npm install
-npm start
+npm run serve:web      # the Edu website at http://localhost:8080
+npm start              # the desktop app (full CBT)
 ```
 
-Build installers with `npm run dist:win`, `npm run dist:mac` or `npm run dist:linux`. GitHub Actions also builds all three automatically (see `.github/workflows/build.yml`).
+| Build | Command |
+|---|---|
+| Website (`www/`) | `npm run build:web` |
+| Android APK | `npm run apk` (needs Android Studio), or let GitHub Actions build it |
+| Open in Android Studio | `npm run android:open` |
+| Desktop installers | `npm run dist:win`, `npm run dist:mac`, `npm run dist:linux` |
+
+GitHub Actions builds everything on each push: the website and APK (`.github/workflows/web-android.yml`), and the desktop installers (`.github/workflows/build.yml`).
 
 ## How it's built
 
 | Path | What it is |
 |---|---|
-| `app/data/questions.json` | The question bank: original JAMB-syllabus questions, each with topic, difficulty, answer and a worked explanation |
-| `app/data/notes.js` | The note bank, one note per topic |
-| `app/engine.js` | Builds and marks exams, tracks mastery, explains lost marks, detects learning patterns and makes study plans |
-| `app/tutor.js`, `app/ai.js` | Edu's study room and the offline AI tutor (teach, question-help and coach modes) |
-| `app/visuals/` | Interactive explainers (Three.js and canvas) |
-| `app/anim/` | GSAP animations, and the video-lesson player (motion graphics drawn as a function of time, so lessons are tiny and work offline) |
-| `app/videos/` | Video lessons |
-| `main.js`, `preload.js` | The Electron shell |
+| `app/edu.html`, `app/learn/` | Edu, the phone-first app: learning map, lessons, practice, progress |
+| `app/data/curriculum/` | The syllabus for each subject: units and lessons |
+| `app/learn/content.js` | Which lessons are ready, and their note, shorts and questions |
+| `app/shorts/` | Short videos, one file per subject; `app/anim/shorts.js` is the swipeable player |
+| `app/anim/labkit.js` | Virtual lab glassware and effects for practical videos |
+| `app/data/notes.js` | The note bank |
+| `app/data/questions.json` | The question bank: original questions with worked explanations |
+| `app/index.html`, `app/app.js`, `app/engine.js` | The full JAMB CBT (mock exams, diagnosis, study plans) |
+| `app/visuals/`, `app/videos/` | Interactive 3D explainers and longer video lessons for the CBT notes |
+| `android/` | The Android app (Capacitor), which wraps the same web code |
+| `main.js`, `preload.js` | The desktop app (Electron) |
 
-Plain JavaScript modules, no build step, no frameworks. It's easy to read and easy to contribute to.
+Plain JavaScript modules, no build step for the app itself, no frameworks. One codebase runs on the web, on Android and on desktop.
 
 ## Roadmap
 
-- [ ] **Edu Library:** full written lessons and step-by-step explanations for every question, so the tutor works on 4 GB school laptops without an AI model
-- [ ] **Lite mode** for older computers (2D animations instead of 3D)
-- [ ] **Teacher dashboard:** combine a class's results (offline, by USB or local Wi-Fi) to show which topics the whole class needs
-- [ ] All JAMB subjects, then WAEC and NECO
+- [ ] Notes, shorts and questions for every chemistry lesson, then physics, mathematics, English and biology
+- [ ] Recorded Nigerian voices for the shorts (see `app/shorts/voice/RECORDING.md`)
+- [ ] JSS and primary subjects
+- [ ] Lite mode for older phones and computers
+- [ ] Teacher dashboard: a class's results combined offline
 - [ ] Yoruba, Hausa and Igbo explanations
 - [ ] Screen-reader and keyboard-only support
-- [ ] "Lab brain" mode: one stronger computer runs the AI for a whole computer lab over local Wi-Fi
 
 ## Contributing
 
-Teachers, students and developers are all welcome: write questions, check answers, translate, add explainers or fix bugs. Start with [CONTRIBUTING.md](CONTRIBUTING.md). Found a wrong answer? [Report it here](../../issues/new?template=question-error.md).
+Teachers, students and developers are all welcome: write notes and questions, check answers, record voices, make shorts, translate or fix bugs. Start with [CONTRIBUTING.md](CONTRIBUTING.md). Found a wrong answer? [Report it here](../../issues/new?template=question-error.md).
 
 ## Licence
 
 - Code: [MIT](LICENSE)
-- Learning content (questions, notes, lessons): [CC BY 4.0](CONTENT-LICENSE.md)
+- Learning content (notes, questions, shorts): [CC BY 4.0](CONTENT-LICENSE.md)
 - Third-party components: [NOTICE.md](NOTICE.md)
 
-Edulink Prep is not affiliated with or endorsed by JAMB.
+Edu is not affiliated with or endorsed by JAMB or WAEC.

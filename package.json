@@ -1,27 +1,35 @@
 {
-  "name": "edulink-prep",
-  "productName": "Edulink Prep",
+  "name": "edu",
+  "productName": "Edu",
   "version": "0.1.0",
-  "description": "Free, open-source, offline JAMB CBT practice: mock exams, personal diagnostics that find weak topics, a note bank, interactive 3D explainers and an offline AI tutor.",
+  "description": "Edu: free, open-source learning for Nigerian students. Short videos, a learning map, notes, quizzes and JAMB CBT practice. Works offline on phones and computers.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "dist:mac": "electron-builder --mac dmg",
     "dist:win": "electron-builder --win nsis portable --x64 --ia32",
     "dist:linux": "electron-builder --linux AppImage",
-    "dist": "electron-builder --publish never"
+    "dist": "electron-builder --publish never",
+    "build:web": "node scripts/build-web.mjs",
+    "serve:web": "npm run build:web && python3 -m http.server 8080 -d www",
+    "android:sync": "npm run build:web && npx cap sync android",
+    "android:open": "npx cap open android",
+    "apk": "npm run android:sync && cd android && ./gradlew assembleDebug"
   },
   "dependencies": {
     "gsap": "3.12.5",
     "three": "0.169.0"
   },
   "devDependencies": {
+    "@capacitor/android": "8.5.2",
+    "@capacitor/cli": "8.5.2",
+    "@capacitor/core": "8.5.2",
     "electron": "^33.2.0",
     "electron-builder": "^25.1.8"
   },
   "build": {
-    "appId": "com.edulink.prep",
-    "productName": "Edulink Prep",
+    "appId": "com.joinedulink.edu.desktop",
+    "productName": "Edu",
     "files": [
       "main.js",
       "preload.js",
@@ -65,10 +73,10 @@
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "perMachine": false,
-      "artifactName": "Edulink-Prep-Setup-${version}.${ext}"
+      "artifactName": "Edu-Setup-${version}.${ext}"
     },
     "portable": {
-      "artifactName": "Edulink-Prep-Portable-${version}.${ext}"
+      "artifactName": "Edu-Portable-${version}.${ext}"
     },
     "linux": {
       "target": [
@@ -82,10 +90,10 @@
     "name": "Goodness Olowolayemo and contributors",
     "url": "https://joinedulink.com"
   },
-  "homepage": "https://github.com/olowolayemogoodness-crypto/edulink-prep",
+  "homepage": "https://edu.joinedulink.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/olowolayemogoodness-crypto/edulink-prep.git"
+    "url": "https://github.com/olowolayemogoodness-crypto/edu.git"
   },
   "keywords": [
     "jamb",
@@ -95,6 +103,8 @@
     "offline",
     "open-source",
     "exam-prep",
-    "electron"
+    "android",
+    "duolingo-style",
+    "short-videos"
   ]
 }

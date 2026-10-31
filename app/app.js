@@ -1,4 +1,4 @@
-// Edulink Prep: screens and navigation.
+// Edu: screens and navigation.
 import * as E from './engine.js';
 import { NOTES } from './data/notes.js';
 import { aiStatus, explain, mdLite } from './ai.js';
@@ -41,7 +41,7 @@ const fmtDur = (ms) => { const m = Math.round(ms / 60000); return m >= 60 ? `${M
 const fmtDate = (t) => new Date(t).toLocaleString(undefined, { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
 
 const I = {
-  logo: '<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C0A00" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V6a2 2 0 012-2h12v15H6a2 2 0 00-2 2z"/><path d="M9 9l2 2 4-4"/></svg>',
+  logo: '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M12 3.5L21 7.6 12 11.7 3 7.6z" fill="#1C0A00"/><path d="M7 9.5v3.4c3.3 2.2 6.7 2.2 10 0V9.5L12 12z" fill="#1C0A00" opacity=".7"/><path d="M9 19.5l3-2.3 3 2.3" fill="none" stroke="#1C0A00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   arrow: '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>',
   back: '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>',
   next: '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>',
@@ -103,7 +103,7 @@ function topbar(active) {
   const nav = [['home', 'Home'], ['setup', 'Mock exam'], ['notes', 'Note bank'], ['reports', 'Reports'], ['edu', 'Ask Edu']];
   const name = P.settings.name.trim();
   return `<header class="topbar">
-    <div class="brand"><span class="mark">${I.logo}</span>Edulink Prep</div>
+    <div class="brand"><span class="mark">${I.logo}</span>Edu</div>
     <nav class="nav" aria-label="Main">${nav.map(([id, label]) => `<button data-go="${id}" class="${active === id ? 'on' : ''}">${label}</button>`).join('')}</nav>
     <div class="grow"></div>
     ${s ? `<span class="pill orange">${I.flame}${s}-day streak</span>` : ''}
@@ -170,7 +170,7 @@ function homeView() {
         <div class="grow" style="min-width:240px"><div style="font-weight:700">Today's focus: ${esc(weak[0].name)}${weak[1] ? `, then ${esc(weak[1].name)}` : ''}</div>
         <div class="small" style="color:#57534E;margin-top:2px">Read the note, play with the explainer, then answer the practice questions. About 20 minutes.</div></div>
         <button class="btn dark" data-act="focus" data-topic="${weak[0].id}">Start focus session</button></section>`
-    : `<section class="focus-strip"><div class="icon-tile">${I.bulb}</div><div class="grow"><div style="font-weight:700">How this works</div><div class="small" style="color:#57534E;margin-top:2px">Take a mock exam. Edulink Prep marks it, finds the topics where you lose marks and builds you a study plan with notes.</div></div></section>`;
+    : `<section class="focus-strip"><div class="icon-tile">${I.bulb}</div><div class="grow"><div style="font-weight:700">How this works</div><div class="small" style="color:#57534E;margin-top:2px">Take a mock exam. Edu marks it, finds the topics where you lose marks and builds you a study plan with notes.</div></div></section>`;
   return `<main class="page rise">
     <section class="hero">
       <div class="hero-dark">

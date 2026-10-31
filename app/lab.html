@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practical chemistry videos</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body{background:#FAF7F2;margin:0;padding:28px;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
+  .wrap{max-width:1000px;margin:0 auto}
+  h1{font-size:26px;margin:0 0 14px}
+  .tabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+  .tabs button{border:0;border-radius:999px;padding:10px 18px;font:inherit;font-weight:700;background:#EDE7DF;cursor:pointer}
+  .tabs button.on{background:#F97316;color:#fff}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Practical chemistry</h1>
+  <div class="tabs"><button data-v="hcl_preparation" class="on">Preparing hydrogen chloride</button><button data-v="cation_tests">Testing for metal ions</button></div>
+  <div id="video"></div>
+</div>
+<script type="module">
+import { mountVideo } from './anim/videoplayer.js';
+let cleanup = null;
+async function show(name) {
+  if (typeof cleanup === 'function') cleanup();
+  const mod = await import(`./videos/${name}.js`);
+  cleanup = mountVideo(document.getElementById('video'), mod.default);
+  document.querySelectorAll('.tabs button').forEach((b) => b.classList.toggle('on', b.dataset.v === name));
+}
+document.querySelector('.tabs').addEventListener('click', (e) => { const b = e.target.closest('button'); if (b) show(b.dataset.v); });
+show(new URLSearchParams(location.search).get('v') || 'hcl_preparation');
+</script>
+</body>
+</html>

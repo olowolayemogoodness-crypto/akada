@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Edu</string>
+    <string name="title_activity_main">Edu</string>
+    <string name="package_name">com.joinedulink.edu</string>
+    <string name="custom_url_scheme">com.joinedulink.edu</string>
+</resources>

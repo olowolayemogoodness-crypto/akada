@@ -1,0 +1,96 @@
+# Builds the Edu website and the Android app on every push to main.
+#   - The website goes to GitHub Pages: https://olowolayemogoodness-crypto.github.io/akada/
+#     (to use edu.joinedulink.com later: add the DNS CNAME, then set EDU_DOMAIN below)
+#   - The APK is published on the website at /downloads/edu.apk
+#   - Pushing a tag like v0.2.0 also attaches the APK to the Releases page
+#
+# Signing: add these repository secrets (Settings → Secrets and variables → Actions) to get a properly
+# signed release APK that installs over older versions:
+#   EDU_KEYSTORE_BASE64 (the .jks file, base64-encoded), EDU_KEYSTORE_PASSWORD, EDU_KEY_ALIAS, EDU_KEY_PASSWORD
+# Without them a debug APK is built (fine for testing, but each new one must replace the old by uninstalling).
+name: Website and Android app
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      EDU_DOMAIN: ''
+      EDU_VERSION_CODE: ${{ github.run_number }}
+      EDU_VERSION_NAME: ${{ startsWith(github.ref, 'refs/tags/v') && github.ref_name || format('0.1.{0}', github.run_number) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - run: npm ci
+      - name: Build the website
+        run: npm run build:web
+      - name: Copy the website into the Android app
+        run: npx cap sync android
+      - name: Build the APK
+        working-directory: android
+        env:
+          KEYSTORE_B64: ${{ secrets.EDU_KEYSTORE_BASE64 }}
+          EDU_KEYSTORE_PASSWORD: ${{ secrets.EDU_KEYSTORE_PASSWORD }}
+          EDU_KEY_ALIAS: ${{ secrets.EDU_KEY_ALIAS }}
+          EDU_KEY_PASSWORD: ${{ secrets.EDU_KEY_PASSWORD }}
+        run: |
+          chmod +x gradlew
+          if [ -n "$KEYSTORE_B64" ]; then
+            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/edu.jks"
+            export EDU_KEYSTORE_PATH="$RUNNER_TEMP/edu.jks"
+            ./gradlew assembleRelease --no-daemon
+            cp app/build/outputs/apk/release/app-release.apk "$RUNNER_TEMP/edu.apk"
+          else
+            echo "::warning::No signing secrets set, building a debug APK."
+            ./gradlew assembleDebug --no-daemon
+            cp app/build/outputs/apk/debug/app-debug.apk "$RUNNER_TEMP/edu.apk"
+          fi
+      - name: Put the APK on the website
+        run: |
+          mkdir -p www/downloads
+          cp "$RUNNER_TEMP/edu.apk" www/downloads/edu.apk
+          cp "$RUNNER_TEMP/edu.apk" "edu-${EDU_VERSION_NAME}.apk"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: edu-android
+          path: edu-*.apk
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: www
+      - name: Attach the APK to the release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: edu-*.apk
+
+  deploy:
+    if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F97316">
+<meta name="description" content="Edu: free, fun, offline learning for Nigerian students. Short videos, notes and quizzes for JAMB and WAEC.">
+<title>Edu · Learn anything, one swipe at a time</title>
+<link rel="icon" href="brand/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="learn/learn.css">
+<link rel="stylesheet" href="learn/edu.css">
+</head>
+<body>
+<div id="edu" class="lrn"></div>
+<script type="module" src="learn/edu.js"></script>
+<script>
+  // Offline support on the website (the Android app already has every file inside it).
+  if ('serviceWorker' in navigator && location.protocol === 'https:' && !window.Capacitor) navigator.serviceWorker.register('sw.js').catch(() => {});
+</script>
+</body>
+</html>

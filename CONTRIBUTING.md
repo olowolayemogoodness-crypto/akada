@@ -1,6 +1,6 @@
-# Contributing to Edulink Prep
+# Contributing to Edu
 
-Thank you for helping students learn. You don't need to be a programmer: most of what Edulink Prep needs is good teaching content.
+Thank you for helping students learn. You don't need to be a programmer: most of what Edu needs is good teaching content.
 
 ## Ways to help
 

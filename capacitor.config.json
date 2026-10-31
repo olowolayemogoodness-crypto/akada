@@ -1,0 +1,8 @@
+{
+  "appId": "com.joinedulink.edu",
+  "appName": "Edu",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#FFFBF5"
+  }
+}

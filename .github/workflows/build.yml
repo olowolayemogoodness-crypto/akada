@@ -1,6 +1,6 @@
-# Builds Edulink Prep for Windows, macOS and Linux on every push.
+# Builds the Edu desktop app (with the full JAMB CBT) for Windows, macOS and Linux on every push.
 # Pushing a tag like v0.2.0 also publishes the installers on the Releases page.
-name: Build installers
+name: Desktop installers
 
 on:
   push:
@@ -29,7 +29,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
       - run: npm ci
       - name: Build
@@ -38,7 +38,7 @@ jobs:
           CSC_IDENTITY_AUTO_DISCOVERY: false # not code-signed yet
       - uses: actions/upload-artifact@v4
         with:
-          name: edulink-prep-${{ matrix.os }}
+          name: edu-desktop-${{ matrix.os }}
           path: |
             dist/*.exe
             dist/*.dmg

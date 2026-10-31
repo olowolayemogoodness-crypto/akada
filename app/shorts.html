@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edulink Shorts</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  html,body{margin:0;height:100%;background:#0B0908}
+  #feed{position:fixed;inset:0;padding:12px 0;box-sizing:border-box}
+</style>
+</head>
+<body>
+<div id="feed"></div>
+<script type="module">
+import { mountShorts, SHORTS_CSS } from './anim/shorts.js';
+import chemistry from './shorts/chemistry.js';
+const st = document.createElement('style'); st.textContent = SHORTS_CSS; document.head.appendChild(st);
+mountShorts(document.getElementById('feed'), chemistry, {
+  onNote: (s) => console.log('open note', s.topic),
+  onPractise: (s) => console.log('practise', s.topic),
+});
+</script>
+</body>
+</html>
